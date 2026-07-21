@@ -9,9 +9,9 @@ class SentimentAgent(object):
     def __init__(self):
         self.relationships: list[dict] = list()
 
-        self.model_name = "MiniMax-M3"
-        self.base_url = "https://api.minimaxi.com/v1"
-        self.api_key = "sk-cp-mEeFZRSWbWzFdg5og740Eac0Lu1fZGO2yo_O2EBqleWlXqT7JOM51DnnL76FaTz9wgKgwiwb74QAj8ujsXgsJ2QHvkrbVAjRb4QVCpYSJzDLDTSS2rF0dWw"
+        self.model_name = "deepseek-v4-flash"
+        self.base_url = "https://api.deepseek.com"
+        self.api_key = "sk-e16dfcaa8c7e43908ae4d922f96c4a8f"
 
         self.ai_client = OpenAI(api_key=self.api_key, base_url=self.base_url)
 
@@ -92,15 +92,13 @@ class SentimentAgent(object):
         # noinspection PyUnresolvedReferences
         msg = response.choices[0].message
 
-        relationships_value = list()
-
         # 模型可能直接回复（不需要工具），也可能发起工具调用
         if msg.tool_calls:
             for tc in msg.tool_calls:
                 result = self.run_tool_call(tc)
                 # noinspection PyUnresolvedReferences
                 args = json.loads(tc.function.arguments)
-                relationships_value = args.get("relationships", list())
+                self.relationships = args.get("relationships", list())
                 # noinspection PyTypeChecker
                 messages.append(msg)  # 保留 assistant 的 tool_calls
                 messages.append({
@@ -123,7 +121,7 @@ class SentimentAgent(object):
         else:
             print(f"直接回复: {msg.content}")
 
-        print(f"\n人物关系图：\n {json.dumps(relationships_value, ensure_ascii=False, indent=4)}")
+        print(f"\n人物关系图：\n {json.dumps(self.relationships, ensure_ascii=False, indent=4)}")
 
 
 if __name__ == '__main__':
