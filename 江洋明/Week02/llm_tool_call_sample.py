@@ -9,7 +9,7 @@ import json
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="sk-86fec757d81a42b0bf6a8a514d55a9c7",
+    api_key="sk-86fec757dxxxabub0bf6a8a514d55a9c7",
     base_url="https://api.deepseek.com",
 )
 
