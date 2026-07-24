@@ -3,7 +3,7 @@ import json
 
 # 创建 OpenAI 客户端
 client = OpenAI(
-    api_key="sk-xxx",
+    api_key="sk-xxxxabux",
     base_url="https://api.deepseek.com",
 )
 
