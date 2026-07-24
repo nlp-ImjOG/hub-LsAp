@@ -16,7 +16,7 @@ SYS_PROMPT = '''
 USER_PROMPT = "小明喜欢小姚，但是小姚喜欢小王,小王喜欢小明。请帮我生成人物关系图谱。"
 
 client = OpenAI(
-    api_key="sk-dc8c095735c841adb38c277f19b16136",
+    api_key="sk-dc8c095735cxxxabu277f19b16136",
     base_url="https://api.deepseek.com")
 
 
