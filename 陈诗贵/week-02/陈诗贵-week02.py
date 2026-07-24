@@ -21,7 +21,7 @@ def extract_relations(text: str) -> list[dict]:
     return result
 
 client = OpenAI(
-    api_key="sk-114a0acf91904f6cbecc6296799d21a",
+    api_key="sk-114a0acxxxabuecc6296799d21a",
     base_url="https://api.deepseek.com",
 )
 
