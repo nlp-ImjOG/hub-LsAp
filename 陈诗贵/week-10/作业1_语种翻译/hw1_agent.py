@@ -9,7 +9,7 @@ import os
 # DeepSeek（OpenAI 兼容协议）
 # 注意：DeepSeek 不支持 response_format=json_schema，因此不使用 output_type，
 # 改为提示词约定 JSON 输出 + 程序解析兜底。
-os.environ["OPENAI_API_KEY"] = "sk-4ef55a2a89be43d3a60e0248fb69d6fc"
+os.environ["OPENAI_API_KEY"] = ""
 os.environ["OPENAI_BASE_URL"] = "https://api.deepseek.com"
 
 import asyncio
