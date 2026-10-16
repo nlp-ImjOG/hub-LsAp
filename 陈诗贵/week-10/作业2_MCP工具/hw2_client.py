@@ -6,7 +6,7 @@
 import os
 
 # DeepSeek（OpenAI 兼容协议）
-os.environ["OPENAI_API_KEY"] = "sk-4ef55a2a89be43d3a60e0248fb69d6fc"
+os.environ["OPENAI_API_KEY"] = ""
 os.environ["OPENAI_BASE_URL"] = "https://api.deepseek.com"
 
 # 本机开着系统代理（如 Clash）时，localhost 请求会被代理拦截导致 502，
