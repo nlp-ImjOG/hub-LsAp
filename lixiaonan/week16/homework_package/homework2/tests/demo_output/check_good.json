@@ -1,0 +1,17 @@
+{
+  "mode": "report",
+  "file": "/Users/lixiaonan47/Desktop/9-code/py312/第16周_Agent应用部署_Skills和OpenClaw/homework_package/homework2/tests/fixtures/report_good.md",
+  "passed": true,
+  "failures": [
+    {
+      "rule": "R2",
+      "severity": "warn",
+      "detail": "晚于窗口终点的日期 2027-02-19（如为截止日期可忽略）",
+      "line": 17
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warns": 1
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "passed": [
+    {
+      "qid": "A1",
+      "line": "A",
+      "url": "https://www.csrc.gov.cn/news/a1",
+      "title": "证监会发布上市公司可持续发展报告电子化规范",
+      "snippet": "三项行业标准于 2026-11-01 发布，规范电子化披露格式。",
+      "date_hint": "2026-11-01",
+      "source_host": "www.csrc.gov.cn",
+      "backend": "ddg",
+      "norm_url": "https://www.csrc.gov.cn/news/a1",
+      "filter_notes": [
+        "日期在窗内",
+        "命中词库:可持续发展报告"
+      ]
+    },
+    {
+      "qid": "C1",
+      "line": "C",
+      "url": "https://finance.example.org/oper-data",
+      "title": "公司发布 2026 年 10 月运营数据",
+      "snippet": "产量与销量数据公告转述。",
+      "date_hint": null,
+      "source_host": "finance.example.org",
+      "backend": "api",
+      "norm_url": "https://finance.example.org/oper-data",
+      "filter_notes": [
+        "date_unknown（日期缺失/无法解析，留语义判定）",
+        "命中词库:公告"
+      ]
+    },
+    {
+      "qid": "C2",
+      "line": "C",
+      "url": "https://city.example.org/marathon",
+      "title": "某某市举办马拉松赛事的组织保障工作情况",
+      "snippet": "赛事保障情况通报。",
+      "date_hint": "2026-11-10",
+      "source_host": "city.example.org",
+      "backend": "ddg",
+      "norm_url": "https://city.example.org/marathon",
+      "filter_notes": [
+        "日期在窗内",
+        "keyword_weak（词库未命中，留语义判定）"
+      ]
+    },
+    {
+      "qid": "A2",
+      "line": "A",
+      "url": "https://www.ifrs.org/consultation",
+      "title": "ISSB 就自然相关披露提案公开征求意见",
+      "snippet": "征求意见截止 2027-02-19。",
+      "date_hint": "2026-12-05",
+      "source_host": "www.ifrs.org",
+      "backend": "ddg",
+      "norm_url": "https://www.ifrs.org/consultation",
+      "filter_notes": [
+        "date_future（日期晚于窗口终点，摘要中的截止日期常见，留语义判定）",
+        "命中词库:ISSB"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "item": {
+        "qid": "A1",
+        "line": "A",
+        "url": "https://www.csrc.gov.cn/news/a1?utm_source=rss&utm_medium=feed&from=rss",
+        "title": "证监会发布上市公司可持续发展报告电子化规范（转载）",
+        "snippet": "同上转载。",
+        "date_hint": "2026-11-01",
+        "source_host": "www.csrc.gov.cn",
+        "backend": "ddg",
+        "norm_url": "https://www.csrc.gov.cn/news/a1"
+      },
+      "reason_code": "dup_url",
+      "detail": "与已见 URL 重复: https://www.csrc.gov.cn/news/a1"
+    },
+    {
+      "item": {
+        "qid": "B2",
+        "line": "B",
+        "url": "https://media.example.org/same-title",
+        "title": "证监会发布上市公司可持续发展报告电子化规范",
+        "snippet": "另一站点同题报道。",
+        "date_hint": "2026-11-02",
+        "source_host": "media.example.org",
+        "backend": "ddg",
+        "norm_url": "https://media.example.org/same-title"
+      },
+      "reason_code": "dup_title",
+      "detail": "与已见标题重复: 证监会发布上市公司可持续发展报告电子化规范"
+    },
+    {
+      "item": {
+        "qid": "B3",
+        "line": "B",
+        "url": "https://coal.example.org/old-news",
+        "title": "煤炭行业节能降碳改造进展",
+        "snippet": "10 月初的行业动态。",
+        "date_hint": "2026-10-01",
+        "source_host": "coal.example.org",
+        "backend": "ddg",
+        "norm_url": "https://coal.example.org/old-news"
+      },
+      "reason_code": "out_of_window",
+      "detail": "日期 2026-10-01 早于窗口起点 2026-10-25"
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "passed": 4,
+    "rejected": 3,
+    "by_reason": {
+      "dup_url": 1,
+      "dup_title": 1,
+      "out_of_window": 1
+    }
+  }
+}

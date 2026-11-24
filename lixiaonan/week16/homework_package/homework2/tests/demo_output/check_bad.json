@@ -1,0 +1,83 @@
+{
+  "mode": "report",
+  "file": "/Users/lixiaonan47/Desktop/9-code/py312/第16周_Agent应用部署_Skills和OpenClaw/homework_package/homework2/tests/fixtures/report_bad.md",
+  "passed": false,
+  "failures": [
+    {
+      "rule": "R3",
+      "severity": "error",
+      "detail": "占位残留：<!-- 模型撰写",
+      "line": 11
+    },
+    {
+      "rule": "R3",
+      "severity": "error",
+      "detail": "占位残留：{{cite:",
+      "line": 15
+    },
+    {
+      "rule": "R3",
+      "severity": "error",
+      "detail": "占位残留：TODO",
+      "line": 15
+    },
+    {
+      "rule": "R1",
+      "severity": "error",
+      "detail": "正文引用 [3] 在附录来源清单中不存在",
+      "line": null
+    },
+    {
+      "rule": "R1",
+      "severity": "warn",
+      "detail": "附录来源 [2] 未被正文引用",
+      "line": null
+    },
+    {
+      "rule": "R2",
+      "severity": "error",
+      "detail": "报告期外日期 2026-10-01 未标注\"数据日期\"",
+      "line": 17
+    },
+    {
+      "rule": "R4",
+      "severity": "error",
+      "detail": "章节「三、建议」内容量 8 低于下限 150",
+      "line": null
+    },
+    {
+      "rule": "R4",
+      "severity": "error",
+      "detail": "章节「四、空章节」内容量 0 低于下限 150",
+      "line": null
+    },
+    {
+      "rule": "R5",
+      "severity": "warn",
+      "detail": "空章节「四、空章节」",
+      "line": 34
+    },
+    {
+      "rule": "R5",
+      "severity": "warn",
+      "detail": "存在空 Mermaid 代码块",
+      "line": null
+    },
+    {
+      "rule": "R5",
+      "severity": "warn",
+      "detail": "空表格行",
+      "line": 45
+    },
+    {
+      "rule": "R6",
+      "severity": "error",
+      "detail": "过程笔记不存在: /Users/lixiaonan47/Desktop/9-code/py312/第16周_Agent应用部署_Skills和OpenClaw/homework_package/homework2/tests/fixtures/nonexistent_notes.md",
+      "line": null
+    }
+  ],
+  "summary": {
+    "errors": 8,
+    "warns": 4
+  }
+}

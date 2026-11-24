@@ -1,0 +1,153 @@
+{
+  "passed": [
+    {
+      "qid": "T1",
+      "line": "双碳",
+      "url": "https://www.ccgp.gov.cn/bid/1001",
+      "title": "某区碳中和数据平台建设项目招标公告",
+      "snippet": "预算 450 万元，建设区域碳排放核算平台。",
+      "date_hint": "2026-11-05",
+      "source_host": "www.ccgp.gov.cn",
+      "backend": "ddg",
+      "norm_url": "https://www.ccgp.gov.cn/bid/1001",
+      "filter_notes": [
+        "日期在窗内",
+        "命中主题词:碳中和"
+      ]
+    },
+    {
+      "qid": "T4",
+      "line": "双碳",
+      "url": "https://mine.example.org/carbon",
+      "title": "矿区生态绿化及碳汇计量监测项目中标公告",
+      "snippet": "矿区绿化的碳汇计量与监测服务成交结果。",
+      "date_hint": "2026-11-12",
+      "source_host": "mine.example.org",
+      "backend": "ddg",
+      "norm_url": "https://mine.example.org/carbon",
+      "filter_notes": [
+        "日期在窗内",
+        "命中主题词:碳汇"
+      ]
+    },
+    {
+      "qid": "T6",
+      "line": "清洁能源",
+      "url": "https://pv.example.org/procurement",
+      "title": "分布式光伏电站设备采购项目",
+      "snippet": "采购公告，交付与验收安排详见原文，截止 2027-02-19 前报名有效。",
+      "date_hint": "2026-12-30",
+      "source_host": "pv.example.org",
+      "backend": "ddg",
+      "norm_url": "https://pv.example.org/procurement",
+      "filter_notes": [
+        "date_future（日期晚于窗口终点，摘要中的截止日期常见，留语义判定）",
+        "命中主题词:光伏"
+      ]
+    },
+    {
+      "qid": "T7",
+      "line": "可持续咨询",
+      "url": "https://consult.example.org/esg-consult",
+      "title": "ESG评级咨询服务询价公告",
+      "snippet": "选取 ESG 咨询服务机构。",
+      "date_hint": "2026-11-15",
+      "source_host": "consult.example.org",
+      "backend": "ddg",
+      "norm_url": "https://consult.example.org/esg-consult",
+      "filter_notes": [
+        "日期在窗内",
+        "命中主题词:ESG"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "item": {
+        "qid": "T1",
+        "line": "双碳",
+        "url": "https://www.ccgp.gov.cn/bid/1001?spm=abc&share_token=x&utm_campaign=z",
+        "title": "某区碳中和数据平台建设项目招标公告",
+        "snippet": "同公告转载。",
+        "date_hint": "2026-11-05",
+        "source_host": "www.ccgp.gov.cn",
+        "backend": "ddg",
+        "norm_url": "https://www.ccgp.gov.cn/bid/1001"
+      },
+      "reason_code": "dup_url",
+      "detail": "与已见 URL 重复: https://www.ccgp.gov.cn/bid/1001"
+    },
+    {
+      "item": {
+        "qid": "T2",
+        "line": "绿色环保",
+        "url": "https://hosp.example.org/purchase",
+        "title": "某医院绿色通道改造采购项目",
+        "snippet": "医院内部绿色通道建设。",
+        "date_hint": "2026-11-08",
+        "source_host": "hosp.example.org",
+        "backend": "ddg",
+        "norm_url": "https://hosp.example.org/purchase"
+      },
+      "reason_code": "blacklist_hit",
+      "detail": "标题命中『绿色通道』名称巧合，与 ESG 无关"
+    },
+    {
+      "item": {
+        "qid": "T3",
+        "line": "绿色环保",
+        "url": "https://city.example.org/road-green",
+        "title": "市政道路绿化带养护服务招标",
+        "snippet": "城区绿化带日常养护。",
+        "date_hint": "2026-11-09",
+        "source_host": "city.example.org",
+        "backend": "ddg",
+        "norm_url": "https://city.example.org/road-green"
+      },
+      "reason_code": "keyword_miss",
+      "detail": "标题/摘要未命中任何主题词"
+    },
+    {
+      "item": {
+        "qid": "T5",
+        "line": "双碳",
+        "url": "https://old.example.org/carbon-old",
+        "title": "去年发布的碳排放核算服务招标公告",
+        "snippet": "历史公告。",
+        "date_hint": "2026-10-01",
+        "source_host": "old.example.org",
+        "backend": "ddg",
+        "norm_url": "https://old.example.org/carbon-old"
+      },
+      "reason_code": "out_of_window",
+      "detail": "日期 2026-10-01 早于窗口起点 2026-10-25"
+    },
+    {
+      "item": {
+        "qid": "T7",
+        "line": "可持续咨询",
+        "url": "https://mirror.example.org/esg-consult-copy",
+        "title": "ESG评级咨询服务询价公告",
+        "snippet": "镜像站点同题。",
+        "date_hint": "2026-11-15",
+        "source_host": "mirror.example.org",
+        "backend": "ddg",
+        "norm_url": "https://mirror.example.org/esg-consult-copy"
+      },
+      "reason_code": "dup_title",
+      "detail": "与已见标题重复: ESG评级咨询服务询价公告"
+    }
+  ],
+  "stats": {
+    "total": 9,
+    "passed": 4,
+    "rejected": 5,
+    "by_reason": {
+      "dup_url": 1,
+      "blacklist_hit": 1,
+      "keyword_miss": 1,
+      "out_of_window": 1,
+      "dup_title": 1
+    }
+  }
+}

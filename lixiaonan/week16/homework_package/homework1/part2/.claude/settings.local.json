@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd *)",
+      "Bash(python3 tests/test_skill_demo.py)",
+      "Bash(echo \"exit=$?\")",
+      "Bash(python3 -c ' *)",
+      "WebFetch(domain:www.chinabidding.com.cn)",
+      "WebFetch(domain:search.ccgp.gov.cn)",
+      "WebFetch(domain:www.chinabidding.cn)"
+    ]
+  }
+}

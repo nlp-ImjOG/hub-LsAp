@@ -1,0 +1,10 @@
+{
+  "mode": "db",
+  "file": "/Users/lixiaonan47/Desktop/9-code/py312/第16周_Agent应用部署_Skills和OpenClaw/homework_package/homework2/tests/fixtures/bids_good.jsonl",
+  "passed": true,
+  "failures": [],
+  "summary": {
+    "errors": 0,
+    "warns": 0
+  }
+}
