@@ -1,0 +1,41 @@
+{
+  "business_rules_version": "esg-research-1.0",
+  "reviewed_at": "2026-11-26",
+  "scope": "共同业务规则与两类业务细则",
+  "checks": {
+    "skill_validators": "passed",
+    "shared_rules_identical": true,
+    "local_references_resolve": true,
+    "baseline_files_archived": 9,
+    "implementation_files_match_baseline": true
+  },
+  "changed_existing_files": [
+    "esg-monthly-report/SKILL.md",
+    "esg-tender-intelligence/SKILL.md",
+    "esg-monthly-report/references/research.md",
+    "esg-tender-intelligence/references/method.md"
+  ],
+  "new_reference_files": [
+    "esg-homework/skills/esg-monthly-report/references/business-rules.md",
+    "esg-homework/skills/esg-tender-intelligence/references/business-rules.md"
+  ],
+  "covered_business_cases": [
+    "公告首发、签署、转载和更新日期差异",
+    "月外背景与后续披露",
+    "发布方索引正文与原文分级",
+    "主体归属与负面监管线索",
+    "候选人、备选、框架入围与最终结果",
+    "概要/正文金额冲突与缺失金额",
+    "不同采购人同项目编号",
+    "文件获取开始缺失及尚未开放",
+    "零新增、公告更正与重复展示",
+    "样本覆盖、索引证据敏感性和停止条件"
+  ],
+  "pending_implementation": [
+    "检索和结构化总结脚本",
+    "项目主键在集中度计算中的实现修正",
+    "日报缺失获取开始时间的实现修正",
+    "A/B实验版本及正式对照运行"
+  ],
+  "behavioral_test_status": "本步为规范与结构检查；上述待实现功能尚未完成行为验收"
+}

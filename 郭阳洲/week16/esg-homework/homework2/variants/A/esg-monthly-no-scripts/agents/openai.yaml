@@ -1,0 +1,4 @@
+interface:
+  display_name: "ESG月报 · 无脚本对照"
+  short_description: "作业二纯指令实验版，使用统一规范完成检索、证据核验、内容总结与月报编写"
+  default_prompt: "使用 $esg-monthly-no-scripts 为中国神华生成2026年10月ESG月报。"

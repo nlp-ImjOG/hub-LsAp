@@ -1,0 +1,25 @@
+{
+  "checked_on": "2026-11-26",
+  "status": "passed",
+  "business_regressions": 14,
+  "fixed_runs": 4,
+  "fixed_corpus_hash_consistent": true,
+  "fixed_research_tool_calls": 0,
+  "factual_audit": "8/8 each on registered checks, researcher reviewed",
+  "first_attempt_failure_preserved": [
+    "live/B-1",
+    "fixed/B-1"
+  ],
+  "model_response_reused_recoveries": 2,
+  "skill_validators": 4,
+  "installed_files_verified": 25,
+  "existing_real_data_regression": "44 lots / 16 projects / CNY 58471800 matches",
+  "limitations": [
+    "small corpus and two repeats per version",
+    "CLI/server default model identifier not exposed",
+    "domain-specific research reference not expanded into experiment prompt",
+    "PDF/dynamic/image reader pending",
+    "no independent blinded review or verified fee data"
+  ],
+  "browser_visual_check": "已查看1440×1800截图，标题、摘要、指标和实测表格显示正常，其余章节完成结构检查"
+}

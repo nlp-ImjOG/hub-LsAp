@@ -1,0 +1,21 @@
+{
+  "checked_on": "2026-11-26",
+  "python_version": "3.12.7",
+  "platform": "Windows",
+  "model_adapter": "本机已登录Codex CLI，已完成真实请求",
+  "model_identifier": "CLI默认值未在调用结果暴露；各实验使用相同执行配置",
+  "search_adapters": {
+    "codex_native": "真实联网试跑成功，保留工具事件",
+    "bing_rss": "HTTP 200，但本次4条中文查询出现明显不相关结果，作为渠道试跑保留"
+  },
+  "page_reader": "urllib + HTMLParser，固定材料7个入口读取成功",
+  "unsupported_reader_formats": [
+    "PDF",
+    "动态JS正文",
+    "图片正文"
+  ],
+  "network_execution": "沙箱网络限制下，经批准在本机网络环境执行",
+  "credential_handling": "沿用Codex本机登录，程序未读取或导出令牌",
+  "transport_observation": "CLI曾多次WebSocket超时后回退HTTPS，运行耗时包含该延迟",
+  "cost": "无可核验费用数据，记录CLI实际用量"
+}

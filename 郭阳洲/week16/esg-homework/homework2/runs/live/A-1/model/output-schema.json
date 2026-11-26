@@ -1,0 +1,90 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "summary": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "source_id": {
+            "type": "string"
+          },
+          "decision": {
+            "type": "string"
+          },
+          "facts": {
+            "type": "string"
+          },
+          "analysis": {
+            "type": "string"
+          },
+          "recommendation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "source_id",
+          "decision",
+          "facts",
+          "analysis",
+          "recommendation"
+        ]
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "url",
+          "published_at",
+          "text"
+        ]
+      }
+    },
+    "queries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "summary",
+    "items",
+    "limitations",
+    "sources",
+    "queries"
+  ]
+}
