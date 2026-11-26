@@ -1,0 +1,4 @@
+interface:
+  display_name: "ESG招投标情报"
+  short_description: "自主检索中国大陆ESG招投标，分析两年成交并生成新增机会简报"
+  default_prompt: "使用 $esg-tender-intelligence 分析近两年中国大陆ESG服务采购中标并生成招标日报。"

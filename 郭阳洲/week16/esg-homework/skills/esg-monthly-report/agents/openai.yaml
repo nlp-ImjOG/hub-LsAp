@@ -1,0 +1,4 @@
+interface:
+  display_name: "ESG月报"
+  short_description: "自主检索政策、行业和企业动态，形成可核验并包含行动建议的月报"
+  default_prompt: "使用 $esg-monthly-report 为中国神华生成上一个完整自然月的ESG月报。"
