@@ -1,0 +1,10 @@
+[
+  {"query": "ESG 政策 2026年10月", "category": "policy", "results": 8, "status": "ok"},
+  {"query": "可持续披露 准则 2026年10月", "category": "policy", "results": 6, "status": "ok"},
+  {"query": "煤炭 ESG 2026年10月", "category": "industry", "results": 9, "status": "ok"},
+  {"query": "中国神华 公告 2026年10月", "category": "company", "results": 7, "status": "ok"},
+  {"query": "ISSB October 2026", "category": "policy", "results": 5, "status": "ok"},
+  {"query": "CBAM October 2026", "category": "policy", "results": 5, "status": "ok"},
+  {"query": "陕西煤业 ESG 2026", "category": "benchmark", "results": 4, "status": "ok"},
+  {"query": "BHP climate 2026", "category": "benchmark", "results": 3, "status": "ok"}
+]

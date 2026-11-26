@@ -1,0 +1,10 @@
+[
+  {"query": "ESG 中标 2024", "category": "ESG报告/信息披露", "results": 8, "status": "ok"},
+  {"query": "ESG 中标 2025", "category": "ESG报告/信息披露", "results": 9, "status": "ok"},
+  {"query": "ESG 中标 2026", "category": "ESG报告/信息披露", "results": 7, "status": "ok"},
+  {"query": "碳足迹 中标 2025", "category": "碳盘查/碳核算/碳足迹", "results": 6, "status": "ok"},
+  {"query": "零碳园区 中标 2026", "category": "双碳规划/零碳园区/碳预算", "results": 5, "status": "ok"},
+  {"query": "碳管理平台 中标 2025", "category": "碳管理/ESG数字化平台", "results": 4, "status": "ok"},
+  {"query": "ESG咨询 中标 2025", "category": "ESG咨询/管理提升/评级", "results": 6, "status": "ok"},
+  {"query": "可持续发展报告 成交 2025", "category": "ESG报告/信息披露", "results": 5, "status": "ok"}
+]
