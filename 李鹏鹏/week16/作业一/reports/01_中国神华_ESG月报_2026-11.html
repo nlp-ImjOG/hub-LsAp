@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>中国神华 ESG 月报 · 2026 年 11 月</title>
+<style>/* ESG 月报样式：单文件 HTML，无外部依赖 */
+:root {
+  --ink: #0f172a;
+  --sub: #475569;
+  --line: #e2e8f0;
+  --accent: #0f766e;
+  --accent-soft: #ccfbf1;
+  --warn: #b45309;
+  --bg: #fff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #eef2f6;
+  color: var(--ink);
+  font: 16px/1.78 -apple-system, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  background: var(--bg);
+  padding: 58px 68px 72px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, .1);
+}
+
+/* 报头 */
+h1 {
+  font-size: 30px;
+  line-height: 1.3;
+  letter-spacing: -.4px;
+  margin: 0 0 6px;
+}
+
+h1 + p, h1 + blockquote { color: var(--sub); font-size: 14px; }
+
+h2 {
+  font-size: 20px;
+  margin: 44px 0 14px;
+  padding-bottom: 9px;
+  border-bottom: 2px solid var(--line);
+  letter-spacing: -.2px;
+}
+
+h3 { font-size: 16.5px; margin: 26px 0 8px; color: #0b3b39; }
+h4 { font-size: 15px; margin: 18px 0 6px; color: var(--sub); }
+
+p { margin: 10px 0; }
+strong { color: #082f2d; }
+
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid #99f6e4; }
+a:hover { border-bottom-color: var(--accent); }
+
+/* 目录 */
+.toc {
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px 22px;
+  margin: 26px 0 34px;
+  font-size: 14px;
+}
+
+.toc-t { font-weight: 700; color: var(--sub); letter-spacing: .5px; margin-bottom: 8px; }
+.toc ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 34px; }
+.toc li { margin: 4px 0; break-inside: avoid; }
+.toc li.lv2 { font-weight: 600; }
+.toc li.lv3 { padding-left: 14px; color: var(--sub); font-size: 13.5px; }
+.toc li.lv4 { padding-left: 28px; color: var(--sub); font-size: 13px; }
+
+/* 摘要引用 */
+blockquote {
+  margin: 16px 0;
+  padding: 14px 18px;
+  background: #f8fafc;
+  border-left: 3px solid var(--accent);
+  color: var(--sub);
+  font-size: 14px;
+  border-radius: 0 8px 8px 0;
+}
+
+/* 表格 */
+.tw { overflow-x: auto; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th {
+  background: #f1f5f9;
+  font-weight: 600;
+  color: #334155;
+  white-space: nowrap;
+}
+th, td { border: 1px solid var(--line); padding: 8px 11px; vertical-align: top; }
+tbody tr:nth-child(even) { background: #fcfdff; }
+tbody tr:hover { background: #f0fdfa; }
+
+/* 列表 */
+ul, ol { padding-left: 24px; margin: 10px 0; }
+li { margin: 6px 0; }
+li > ul { margin: 4px 0 8px; }
+li > ul > li { margin: 3px 0; color: var(--sub); font-size: 14.5px; }
+
+/* 引用编号 */
+sup.cite { color: var(--accent); font-size: 11px; font-weight: 600; padding: 0 1px; }
+
+/* 图片 */
+figure { margin: 20px 0; }
+img { max-width: 100%; border: 1px solid var(--line); border-radius: 10px; }
+figcaption { color: var(--sub); font-size: 12.5px; margin-top: 6px; text-align: center; }
+
+code {
+  background: #f1f5f9;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+
+hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
+
+/* KPI 卡片（正文原生 HTML 使用） */
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 20px 0 26px; }
+.kpi { background: #f8fafc; border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.kpi .v { font-size: 22px; font-weight: 700; color: var(--accent); letter-spacing: -.5px; }
+.kpi .l { font-size: 12.5px; color: var(--sub); margin-top: 2px; line-height: 1.5; }
+.kpi .d { font-size: 11.5px; color: #64748b; margin-top: 4px; }
+
+/* 影响评估色块 */
+.tag { display: inline-block; font-size: 11.5px; font-weight: 600; padding: 1px 7px;
+  border-radius: 999px; margin-right: 4px; }
+.tag.high { background: #fee2e2; color: #b91c1c; }
+.tag.mid { background: #fef3c7; color: #b45309; }
+.tag.low { background: #e0f2fe; color: #0369a1; }
+.tag.pos { background: #dcfce7; color: #15803d; }
+.tag.neg { background: #ffe4e6; color: #be123c; }
+
+/* 时间线 */
+.tl { border-left: 2px solid var(--accent-soft); margin: 18px 0; padding-left: 20px; }
+.tl .ev { margin: 14px 0; position: relative; }
+.tl .ev::before { content: ""; position: absolute; left: -26px; top: 7px; width: 9px;
+  height: 9px; border-radius: 50%; background: var(--accent); }
+.tl .d { font-size: 12.5px; color: var(--accent); font-weight: 700; }
+.tl .t { font-size: 14.5px; margin-top: 2px; }
+
+/* 提示条 */
+.note { background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px;
+  padding: 12px 16px; font-size: 14px; color: #78350f; margin: 16px 0; }
+.missing { color: var(--warn); }
+
+.doc-foot {
+  margin-top: 48px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+@media print {
+  body { background: #fff; }
+  .page { box-shadow: none; padding: 0; max-width: none; }
+  h2 { page-break-after: avoid; }
+  table, figure { page-break-inside: avoid; }
+}
+
+@media (max-width: 720px) {
+  .page { padding: 28px 20px; }
+  .toc ul { columns: 1; }
+  .kpis { grid-template-columns: repeat(2, 1fr); }
+}</style></head>
+<body><div class="page">
+<nav class="toc"><div class="toc-t">目录</div><ul><li class="lv2"><a href="#一-本月要点-五条判断">一、本月要点：五条判断</a></li><li class="lv2"><a href="#二-esg-政策与标准动态">二、ESG 政策与标准动态</a></li><li class="lv3"><a href="#2-1-国内-披露准则体系进入-行业落地-阶段">2.1 国内：披露准则体系进入&quot;行业落地&quot;阶段</a></li><li class="lv3"><a href="#2-2-国际-自然议题与碳关税两条外部压力线">2.2 国际：自然议题与碳关税两条外部压力线</a></li><li class="lv3"><a href="#2-3-评级与指数-方法论换挡">2.3 评级与指数：方法论换挡</a></li><li class="lv2"><a href="#三-煤炭与能源行业动态">三、煤炭与能源行业动态</a></li><li class="lv3"><a href="#3-1-甲烷-从-自证-走向-国际标准">3.1 甲烷：从&quot;自证&quot;走向&quot;国际标准&quot;</a></li><li class="lv3"><a href="#3-2-碳市场-配额收紧的量化影响">3.2 碳市场：配额收紧的量化影响</a></li><li class="lv3"><a href="#3-3-碳中和技术-ccus-进入-可核验-阶段">3.3 碳中和技术：CCUS 进入&quot;可核验&quot;阶段</a></li><li class="lv2"><a href="#四-中国神华-本月动作与-esg-影响评估">四、中国神华：本月动作与 ESG 影响评估</a></li><li class="lv3"><a href="#4-1-经营与资本动作">4.1 经营与资本动作</a></li><li class="lv3"><a href="#4-2-荣誉与外部评价">4.2 荣誉与外部评价</a></li><li class="lv3"><a href="#4-3-影响评估与建议动作">4.3 影响评估与建议动作</a></li><li class="lv2"><a href="#五-对标企业关键行动">五、对标企业关键行动</a></li><li class="lv2"><a href="#六-下月关注">六、下月关注</a></li><li class="lv2"><a href="#附录-a-评级与评价快照">附录 A 评级与评价快照</a></li><li class="lv2"><a href="#附录-b-本月事件日历">附录 B 本月事件日历</a></li><li class="lv2"><a href="#附录-c-信息来源">附录 C 信息来源</a></li><li class="lv2"><a href="#附录-d-方法与免责">附录 D 方法与免责</a></li></ul></nav>
+<h1 id="中国神华-esg-月报-2026-年-11-月">中国神华 ESG 月报 · 2026 年 11 月</h1>
+<blockquote><strong>客户主体</strong> 中国神华能源股份有限公司（601088.SH / 01088.HK）｜<strong>统计期</strong> 2026-10-25 至 2026-11-24｜<strong>行业</strong> 煤炭开采洗选、煤电、煤化工｜<strong>对标组</strong> 中煤能源、兖矿能源、国家能源集团｜<strong>编制</strong> ESG 月报技能自动汇编，人工复核｜<strong>出报日</strong> 2026-11-24</blockquote>
+<div class="kpis">
+<div class="kpi"><div class="v">19,982</div><div class="l">2025 年温室气体排放总量（万吨 CO₂e）</div><div class="d">范围一 19,674 + 范围二 308 [30]</div></div>
+<div class="kpi"><div class="v">6.78</div><div class="l">2025 年排放强度（吨 CO₂e / 万元收入）</div><div class="d">同比 +15.1%（2024：5.89）[30]</div></div>
+<div class="kpi"><div class="v">BB</div><div class="l">MSCI ESG 评级（2026-06-29）</div><div class="d">连续四年持平，同业 18 家第 5 [31]</div></div>
+<div class="kpi"><div class="v">A</div><div class="l">LSEG（伦交所）ESG 评级</div><div class="d">较上年 A- 上调，同业 23 家第 1 [32]</div></div>
+</div>
+<h2 id="一-本月要点-五条判断">一、本月要点：五条判断</h2>
+<ol><li><strong>合规主线从&quot;披露有没有&quot;转向&quot;数据能不能追溯&quot;</strong>。财政部在 11 月连续落子：《会计改革与发展&quot;十五五&quot;规划》明确到 2030 年基本建成国家统一的可持续披露准则体系 <sup class="cite">[1]</sup>，并公开表示将按&quot;上市公司→非上市公司、大型→中小企业、定性→定量、自愿→强制&quot;四步扩围 <sup class="cite">[2]</sup>。对神华而言，2026 年年报（2027 年 3 月披露）是<strong>范围三首次披露窗口</strong>——公司已在 2025 年报告中明确&quot;范围三暂未披露、计划于 2026 年 ESG 报告披露&quot; <sup class="cite">[30]</sup>，而《气候准则》要求披露范围三且不得以数据难获取为由规避 <sup class="cite">[5]</sup>。<strong>这是本月清单上唯一带硬截止日的事项。</strong></li></ol>
+<ol><li><strong>煤炭行业的专项披露规则已进入征求意见落地阶段</strong>。财政部 9 月末发布的《气候准则》应用指南及电力、钢铁、<strong>煤炭</strong>、石油等 9 个行业指南（反馈截止 2026-10-26）<sup class="cite">[4]</sup>，意味着煤炭企业将首次面对&quot;通用指南 + 行业专项指南&quot;的双层披露要求。神华作为行业龙头，其披露口径大概率成为行业参照系，提前对齐可换取话语权。</li></ol>
+<ol><li><strong>甲烷正在从&quot;企业自证&quot;升级为&quot;国际标准计量&quot;</strong>。我国牵头提出的《煤矿区甲烷逸散排放监测与计量方法》在国际标准化组织（ISO）成功立项，填补全球煤矿区甲烷监测标准空白，并明确&quot;为企业 ESG 信息披露和国家温室气体清单编制提供标准化数据&quot; <sup class="cite">[15]</sup>。该标准落地后，煤矿甲烷排放将首次具备国际可比的计量方法——神华的范围一排放中甲烷占比将第一次被外部标准&quot;定量审视&quot;。</li></ol>
+<ol><li><strong>评级方法论同时换挡，G 维度权重上升</strong>。中证 ESG 评价方法 V4.0 于 9 月发布、10 月起市场开始反应 <sup class="cite">[6]</sup>；中国证券报 11 月 2 日报道，中证 2026 年评级中农业银行由 A 升至 AAA、工业富联由 BBB 升至 AAA，10 月以来多家 A 股公司把&quot;战略委员会&quot;扩容为&quot;战略与 ESG 委员会&quot; <sup class="cite">[7]</sup>。神华 MSCI 评级连续四年停留在 BB、低于兖矿能源 <sup class="cite">[31]</sup>，而 LSEG 评级已升至同业第一 <sup class="cite">[32]</sup>——<strong>外部评价的分化本身说明&quot;非财务信息的数据质量&quot;是短板，而非绩效本身</strong>。</li></ol>
+<ol><li><strong>碳市场配额收紧将直接改写火电板块的成本曲线</strong>。生态环境部 2025、2026 年度配额方案将预分配比例降至 50%、取消历史结余跨期结转、下调发电基准值 <sup class="cite">[8]</sup>；11 月起湖北、重庆、天津、北京等地集中公示 2027 年度重点排放单位名录，纳入门槛为年直接排放 2.6 万吨 CO₂e <sup class="cite">[9]</sup>。神华火电资产需按新基准值重算缺口。</li></ol>
+<h2 id="二-esg-政策与标准动态">二、ESG 政策与标准动态</h2>
+<h3 id="2-1-国内-披露准则体系进入-行业落地-阶段">2.1 国内：披露准则体系进入&quot;行业落地&quot;阶段</h3>
+<ul><li><strong>&quot;十五五&quot;会计规划把可持续披露写进五年任务书</strong>。财政部 11 月 11 日印发《会计改革与发展&quot;十五五&quot;规划》（财会〔2026〕13 号），在&quot;推进可持续披露准则体系建设&quot;章节明确：制定发布气候准则重点行业应用指南，研究制定生物多样性等系列准则和中小企业准则，建立健全可持续信息鉴证业务准则，组建全国环境社会治理标准化技术委员会 <sup class="cite">[1]</sup>。<strong>信号</strong>：披露、鉴证、评价将形成闭环，&quot;买一份报告&quot;的时代结束。</li><li><strong>实施节奏官方定调为&quot;四个扩展&quot;</strong>。财政部会计司司长林启云在 11 月 11 日发布会上表示，将&quot;从上市公司向非上市公司扩展，从大型企业向中小企业扩展，从定性要求向定量要求扩展，从自愿披露向强制披露扩展&quot;，今年已分地区、分行业开展准则实施试点 <sup class="cite">[2]</sup>。</li><li><strong>自然相关披露启动国内意见征集</strong>。财政部会计司就 ISSB《自然相关披露（征求意见稿）》公开征求意见，反馈截止 <strong>2026-12-20</strong>（财会便函〔2026〕57 号）；该征求意见稿由 ISSB 于 10 月 22 日在《生物多样性公约》COP17 期间发布，要求将自然依赖与影响细化到<strong>地点级、资产级</strong>颗粒度 <sup class="cite">[3]</sup>。<strong>这是本月唯一有明确截止日的对外意见窗口。</strong></li><li><strong>首个强制披露季复盘：形式合规已完成，实质内容待补</strong>。截至 2026 年 4 月 30 日，纳入强制披露范围的 430 家上市公司全部按期披露，A 股共 2,720 家公司发布 2025 年度可持续发展报告、披露率 49% <sup class="cite">[5]</sup>。同一报道指出，多数报告&quot;满足形式要求但实质内容不足，数据治理仍是薄弱环节&quot;；《生态环境法典》已于 2026 年 8 月生效，为温室气体排放信息披露、碳排放统计核算、产品碳足迹提供法律基础 <sup class="cite">[5]</sup>。</li></ul>
+<h3 id="2-2-国际-自然议题与碳关税两条外部压力线">2.2 国际：自然议题与碳关税两条外部压力线</h3>
+<ul><li><strong>CBAM 进入真金白银阶段</strong>。欧盟碳边境调节机制已于 2026 年 1 月 1 日正式实施，2027 年起进入证书清缴 <sup class="cite">[12]</sup><sup class="cite">[13]</sup>。商务部指出，欧方对中国产品设定显著偏高的碳排放强度基础默认值并将逐年提高，且拟自 2028 年起把范围扩至约 180 种钢铝密集型下游产品 <sup class="cite">[12]</sup>。中国钢铁工业协会测算，CBAM 默认值高于我国实际值近 1 倍；2025 年我国对欧盟出口相关产品货值 211 亿欧元、含钢量约 500 万吨 <sup class="cite">[14]</sup>。</li><li><strong>对神华的传导路径</strong>：直接出口敞口有限，但<strong>间接敞口</strong>存在——煤化工下游（聚烯烃等）若进入 CBAM 扩围清单，或下游客户被征收碳成本后向上游压价，均会传导至产品定价与客户结构。建议在 2027 年预算前完成一次敞口测算（见第四节建议动作）。</li></ul>
+<h3 id="2-3-评级与指数-方法论换挡">2.3 评级与指数：方法论换挡</h3>
+<ul><li><strong>中证 ESG 评价方法 V4.0</strong>：2026 年 9 月发布，9 月 21 日发布首期新结果，覆盖近 5,000 家上市公司及 2,500 余家发债主体；更新集中在完善框架与指标体系（更好契合交易所可持续发展报告指引）、细化指标处理与得分计算、完善分级规则 <sup class="cite">[6]</sup>。</li><li><strong>评级结果的市场反应</strong>：10 月以来多家 A 股公司把董事会&quot;战略委员会&quot;扩容为&quot;战略与 ESG 委员会&quot;，将 ESG 纳入最高决策层议事范围；专家建议从&quot;ESG 专门委员会设置、董事会审议频次与深度、ESG 报告是否经董事会审议通过&quot;三个细项观察治理质量 <sup class="cite">[7]</sup>。</li><li><strong>华证指数 11 月在进博会期间集中发布三份成果</strong>：2026 年 A 股上市公司绿色低碳先锋榜单、《2026 港股通上市公司 ESG 年度报告》、《2026 年 A 股上市公司可持续发展（ESG）实践深度研究》白皮书，并披露 ESG 评分前 50% 组合的三年年化表现 <sup class="cite">[37]</sup>。<strong>含义</strong>：ESG 评级正在从&quot;报告评价&quot;变成&quot;资金定价因子&quot;。</li></ul>
+<table>
+<thead><tr><th>时间节点</th><th>事项</th><th>状态</th><th>与神华的关系</th></tr></thead>
+<tbody>
+<tr><td>2026-10-26</td><td>《气候准则》应用指南及电力、钢铁、煤炭等 9 行业指南征求意见截止</td><td>已截止，待正式发布</td><td>煤炭行业专项披露口径将定稿</td></tr>
+<tr><td>2026-12-20</td><td>ISSB《自然相关披露（征求意见稿）》反馈截止</td><td>进行中</td><td>可提交行业意见，抢占规则话语权</td></tr>
+<tr><td>2027-01-01</td><td>CBAM 进入证书清缴周期（针对 2026 年进口）</td><td>已实施</td><td>下游客户碳成本上升，间接受压</td></tr>
+<tr><td>2027-03</td><td>2026 年年报暨 ESG 报告披露</td><td>准备期</td><td>范围三首次披露窗口</td></tr>
+<tr><td>2028 年起</td><td>CBAM 拟扩围至约 180 种钢铝密集型下游产品</td><td>立法草案</td><td>煤化工下游敞口需提前测算</td></tr>
+</tbody>
+</table>
+<h2 id="三-煤炭与能源行业动态">三、煤炭与能源行业动态</h2>
+<h3 id="3-1-甲烷-从-自证-走向-国际标准">3.1 甲烷：从&quot;自证&quot;走向&quot;国际标准&quot;</h3>
+<p>我国牵头提出的《煤矿区甲烷逸散排放监测与计量方法》国际标准提案在 ISO 成功立项，填补全球煤矿区甲烷排放监测领域国际标准空白 <sup class="cite">[15]</sup>。标准在三个层面给出方法：监测技术层面提出&quot;天地一体化&quot;思路（航空巡检、地面定点、移动走航）；核算层面提出煤矿甲烷通量核算方法，结合生产活动数据确定煤炭产品甲烷排放强度；数据管理与报告层面规定质量控制与报告要求，<strong>明确服务于企业 ESG 信息披露与国家温室气体清单编制</strong> <sup class="cite">[15]</sup>。</p>
+<blockquote><strong>为什么这条对神华最重要</strong>：神华 2025 年范围一排放 19,674 万吨 CO₂e，其中煤矿瓦斯（甲烷）是重要构成 <sup class="cite">[30]</sup>。此前企业可用自选方法估算，一旦国际标准落地，甲烷计量的方法学将统一，<strong>范围一数据的可核验性将被放在国际标尺上比较</strong>。同时，晋能控股牵头的&quot;山西晋城煤炭企业碳排放标准化试点&quot;已入选国家级碳排放标准化试点，是<strong>煤炭行业首个</strong>国家级碳排放标准化试点，实施周期 2026—2027 年 <sup class="cite">[18]</sup>——行业内的&quot;标准化竞赛&quot;已经开始。</blockquote>
+<h3 id="3-2-碳市场-配额收紧的量化影响">3.2 碳市场：配额收紧的量化影响</h3>
+<ul><li><strong>配额方案三个收紧动作</strong>：预分配比例降至 50%、取消历史结余跨期结转、下调发电基准值 <sup class="cite">[8]</sup>。前两项直接压缩企业&quot;用历史盈余跨期腾挪&quot;的空间，第三项直接抬升火电履约成本。</li><li><strong>市场规模与价格</strong>：2026 年 9 月全国碳市场 CEA 成交 3,093.94 万吨、28.88 亿元，环比分别上升 20.81% 和 19.04%，最高价 98.50 元/吨；截至 2026 年 9 月底累计成交 9.92 亿吨、685.87 亿元 <sup class="cite">[10]</sup>。2025 年全年成交 2.35 亿吨（同比 +24.36%）、146.30 亿元；2026 年 1—8 月成交量与成交额同比分别上涨 46.53% 和 67.64% <sup class="cite">[11]</sup>。</li><li><strong>管控边界清晰化</strong>：湖北、重庆、天津、北京等地集中公示 2027 年度全国碳市场重点排放单位名录，纳入门槛为经核查确认的 2025 年度排放或 2026 年新投产预计年排放达 <strong>2.6 万吨 CO₂e</strong>；纳入全国市场后不再参与地方试点相同行业管理，避免重复管控 <sup class="cite">[9]</sup>。据报道，地方试点与全国市场在核算边界、外购电处理、基准值上存在差异，&quot;原本在地方盈余的单元按全国标杆核算，可能转为有缺口&quot; <sup class="cite">[9]</sup>。</li></ul>
+<h3 id="3-3-碳中和技术-ccus-进入-可核验-阶段">3.3 碳中和技术：CCUS 进入&quot;可核验&quot;阶段</h3>
+<p>清华大学《2026 全球碳中和年度进展报告》统计，我国稳定运行的全流程 CCUS 项目共 20 个，数量位居全球第二，国家能源集团为参与主体之一；<strong>国能鄂尔多斯咸水层封存示范（神华 CCS）</strong> 在列，规模 10 万吨/年 <sup class="cite">[20]</sup>。该示范项目自 2011 年投运，是世界煤化工领域首个全流程 CO₂ 捕集封存项目，每年可捕集封存 5,100 万立方米二氧化碳 <sup class="cite">[21]</sup>。</p>
+<p>政策侧同步收紧标准：《煤炭工业发展&quot;十五五&quot;规划》明确&quot;推动煤炭消费达峰&quot;&quot;全面提升行业能效碳效水平&quot; <sup class="cite">[16]</sup>；《实施全面节约战略行动方案》要求到 2030 年单位 GDP 能耗、用水量比 2025 年分别降低 10% 左右和 10%、建设用地使用面积降低 15% <sup class="cite">[17]</sup>；生态环境部年度报告显示 2021—2025 年累计淘汰落后煤电产能超过 35 GW <sup class="cite">[19]</sup>。</p>
+<h2 id="四-中国神华-本月动作与-esg-影响评估">四、中国神华：本月动作与 ESG 影响评估</h2>
+<h3 id="4-1-经营与资本动作">4.1 经营与资本动作</h3>
+<ul><li><strong>三季度业绩与产量</strong>：2026 年第三季度报告于 10 月 24 日披露，单季营收超千亿、创同期新高；前三季度商品煤产量 3.819 亿吨（同比下降 2.3%），第三季度产量 1.32 亿吨（同比增长 0.2%）<sup class="cite">[22]</sup><sup class="cite">[23]</sup>。9 月运营数据显示商品煤产量 44.5 百万吨、累计 381.9 百万吨，煤炭销售量累计 460.6 百万吨（同比 +0.1%）<sup class="cite">[24]</sup>；10 月运营数据于 11 月 14 日披露 <sup class="cite">[25]</sup>。</li><li><strong>产量下滑的四个具体原因</strong>（11 月 10 日投资者关系记录）：布尔台、哈拉沟煤矿搬家倒面影响生产；神宝露天矿去年下半年征地及土方剥离受降雨影响滞后；榆家梁煤矿煤层变薄；新疆及蒙东区域煤炭需求增量不足 <sup class="cite">[26]</sup>。</li><li><strong>资本开支与分红</strong>：3—5 年资本开支预计维持 400—600 亿元区间，主要投向煤炭和煤化工新建项目，并承诺分红比例不低于 65% <sup class="cite">[34]</sup>。</li><li><strong>煤制气资产收购</strong>：全资子公司新疆能源以 6.18 亿元现金收购国能新疆煤制气 50% 股权，标的核心资产为准东 20 亿立方米/年煤制天然气项目，总投资约 150.77 亿元，2025 年 10 月开工、计划 2027 年底投料试车，原料及燃料煤由红沙泉煤矿供应 <sup class="cite">[23]</sup>。</li></ul>
+<h3 id="4-2-荣誉与外部评价">4.2 荣誉与外部评价</h3>
+<ul><li><strong>香港会计师公会 2026 年度最佳企业管治及 ESG 奖</strong>：11 月 5 日公布，神华在主板上市类别获&quot;ESG 特别提名&quot;，本届共表彰 35 家上市公司及公营机构；评审首次引入 AI 辅助初审，系统筛查 680 余份港股年报与 ESG 报告，同期发布《AI 世代下数据管治实务指引》<sup class="cite">[27]</sup>。</li><li><strong>财联社 2026 ESG 致远奖</strong>（11 月 15 日）<sup class="cite">[28]</sup>；物资公司绿色供应链案例入选《2026 企业 ESG 实践报告》（中国企业家改革与发展研究会第四届 ESG 创新年会）<sup class="cite">[29]</sup>。</li></ul>
+<blockquote>外部评奖的取向值得注意：港股评审已从&quot;报告是否齐备&quot;转向&quot;自愿披露水平、治理文化与实质 ESG 成效&quot;，并同步抬升<strong>数据治理与内控</strong>要求 <sup class="cite">[27]</sup>。这与财政部&quot;鉴证 + 数据标准&quot;的监管方向一致。</blockquote>
+<h3 id="4-3-影响评估与建议动作">4.3 影响评估与建议动作</h3>
+<table>
+<thead><tr><th>本月事项</th><th>影响面</th><th>量级</th><th>建议动作（做什么 / 谁 / 何时）</th></tr></thead>
+<tbody>
+<tr>
+<td>2025 年报告未披露范围三，计划 2026 年披露 [30]；《气候准则》明确要求范围三且不得规避 [5]</td>
+<td><span class="tag high">高</span><span class="tag neg">合规</span> E</td>
+<td>影响范围三首次披露、气候准则对标、机构投资者评价</td>
+<td>① 2026-12 前完成范围三类别筛选，优先核算"外购商品与服务、上下游运输、售出产品使用"三类；② ESG 编写组 + 安环部 + 供应链管理部联合建模，2027-01 完成初稿；③ 2027-03 年报前取得鉴证机构对范围三的口径确认</td>
+</tr>
+<tr>
+<td>碳市场配额方案：预分配 50%、取消跨期结转、下调发电基准值 [8]；2027 年度名录门槛 2.6 万吨 CO₂e [9]</td>
+<td><span class="tag high">高</span><span class="tag neg">成本</span> E</td>
+<td>直接影响火电板块配额缺口与履约成本</td>
+<td>① 按新基准值重算 2027 年各电厂缺口，2027-01 前完成；② 制定 CEA 与 CCER 组合履约策略，纳入年度预算；③ 梳理下属单位是否落入 2.6 万吨门槛，避免名单遗漏导致合规风险</td>
+</tr>
+<tr>
+<td>收购准东 20 亿方/年煤制气（2027 年底投料试车）[23]</td>
+<td><span class="tag mid">中</span><span class="tag neg">排放增量</span> E / G</td>
+<td>投产后新增范围一排放与用水强度，改变强度趋势线</td>
+<td>① 在 2026 年报"气候相关资本支出"一节单列该项目投资与预期排放；② 2027-02 前建立项目碳排放与用水基线并接入集团碳数据平台；③ 关联交易定价公允性在治理章节说明</td>
+</tr>
+<tr>
+<td>MSCI 连续四年 BB、低于兖矿 [31]；LSEG 已升至同业第 1 [32]；中证 V4.0 强化治理架构维度 [6][7]</td>
+<td><span class="tag mid">中</span><span class="tag pos">机遇</span> G</td>
+<td>影响被动资金配置与融资成本</td>
+<td>① 做一次"评级差距诊断"，逐条比对 MSCI 5.0 与中证 V4.0 指标，定位失分点（重点：数据可得性、治理披露颗粒度）；② 董事会层面明确 ESG 议事机制，参照同业将战略委员会扩容为"战略与 ESG 委员会"，2027-04 前完成；③ 投资者关系部建立评级机构年度沟通机制</td>
+</tr>
+<tr>
+<td>ISO 煤矿区甲烷监测标准立项 [15]；晋城煤炭碳排放标准化试点（行业首个）[18]</td>
+<td><span class="tag mid">中</span><span class="tag pos">先发</span> E</td>
+<td>未来甲烷计量口径统一，范围一可核验性受外部审视</td>
+<td>① 跟踪国内对口单位参与标准制定，争取纳入工作组；② 选 1—2 个高瓦斯矿井试点"天地一体化"监测（航空巡检 + 地面定点 + 走航），2027 年内形成方法论；③ 将试点数据用于 2026 年报甲烷排放披露，形成"标准—数据—披露"闭环</td>
+</tr>
+<tr>
+<td>财政部 ISSB 自然相关披露征求意见（截止 2026-12-20）[3]；煤炭行业气候准则指南征求意见 [4]</td>
+<td><span class="tag low">低</span><span class="tag pos">话语权</span> G</td>
+<td>影响未来规则对煤炭行业的适配度</td>
+<td>① 2026-12-15 前通过行业协会或会计准则委员会渠道提交意见，重点反馈"地点级/资产级"披露在矿区的可操作性；② 跟踪煤炭行业指南正式稿，2027-01 前完成披露差距清单</td>
+</tr>
+<tr>
+<td>鄂尔多斯 10 万吨/年 CCS 入选全球 CCUS 项目统计 [20][21]</td>
+<td><span class="tag low">低</span><span class="tag pos">叙事</span> E</td>
+<td>技术资产尚未转化为披露资产</td>
+<td>① 将该项目的捕集量、封存监测数据纳入年报"减排项目"专节，量化减排贡献；② 形成可复制方案对外输出，参与行业标准制定</td>
+</tr>
+</tbody>
+</table>
+<h2 id="五-对标企业关键行动">五、对标企业关键行动</h2>
+<div class='tw'><table><thead><tr><th style="text-align:left">维度</th><th style="text-align:left">中国神华</th><th style="text-align:left">中煤能源</th><th style="text-align:left">兖矿能源</th><th style="text-align:left">差距判断</th></tr></thead><tbody><tr><td style="text-align:left">2025 排放总量</td><td style="text-align:left">19,982 万吨 CO₂e（范围一 19,674 / 二 308）<sup class="cite">[30]</sup></td><td style="text-align:left">范围二 969 万吨；范围一约 3,708 万吨 <sup class="cite">[36]</sup></td><td style="text-align:left">未取得本期可比数据</td><td style="text-align:left">神华体量最大，绝对排放远超同业</td></tr><tr><td style="text-align:left">排放强度</td><td style="text-align:left">6.78 吨/万元收入（+15.1%）<sup class="cite">[30]</sup></td><td style="text-align:left">4.74 吨/万元（+13.4%）<sup class="cite">[36]</sup></td><td style="text-align:left">—</td><td style="text-align:left">两家龙头强度<strong>同时上行</strong>，属行业性特征（产量高位、煤质下降），非个体管理失效</td></tr><tr><td style="text-align:left">范围三</td><td style="text-align:left">2025 年未披露，计划 2026 年披露 <sup class="cite">[30]</sup></td><td style="text-align:left">已启动核算，明确优先类别 <sup class="cite">[35]</sup></td><td style="text-align:left">—</td><td style="text-align:left"><strong>神华落后约一个披露周期</strong></td></tr><tr><td style="text-align:left">气候财务量化</td><td style="text-align:left">年度目标进展经第三方鉴证 <sup class="cite">[30]</sup></td><td style="text-align:left">已测算&quot;煤炭需求与价格&quot;&quot;碳市场风险&quot;2 项风险的财务影响 <sup class="cite">[35]</sup></td><td style="text-align:left">—</td><td style="text-align:left">中煤在&quot;财务影响量化&quot;上更具体</td></tr><tr><td style="text-align:left">减排技术路径</td><td style="text-align:left">CCUS 实物资产（鄂尔多斯 10 万吨/年，全球煤化工首个）<sup class="cite">[20]</sup><sup class="cite">[21]</sup></td><td style="text-align:left">&quot;源头减碳—过程降碳—末端固碳&quot;三段式（绿氢绿氨绿醇耦合、换电重卡、CO₂ 加氢制甲醇、咸水层封存）<sup class="cite">[35]</sup></td><td style="text-align:left">—</td><td style="text-align:left">神华强在单点工程，中煤强在体系化叙事</td></tr><tr><td style="text-align:left">ESG 管理机制</td><td style="text-align:left">2025 年报告经毕马威华振有限保证鉴证 <sup class="cite">[30]</sup></td><td style="text-align:left">编制《&quot;十五五&quot;ESG 专项规划》，ESG 管理平台指标管理/案例征集/报告编制线上化 <sup class="cite">[35]</sup></td><td style="text-align:left">—</td><td style="text-align:left">神华鉴证领先，中煤数字化领先</td></tr><tr><td style="text-align:left">外部评级</td><td style="text-align:left">MSCI BB（同业第 5）；LSEG A（同业第 1）；中证 AA <sup class="cite">[31]</sup><sup class="cite">[32]</sup><sup class="cite">[33]</sup></td><td style="text-align:left">MSCI 与神华同级 <sup class="cite">[31]</sup></td><td style="text-align:left">MSCI 高于神华；LSEG A-（同业第 2）<sup class="cite">[31]</sup><sup class="cite">[32]</sup></td><td style="text-align:left">评级分化明显：数据质量与治理披露是神华短板</td></tr></tbody></table></div>
+<blockquote><strong>对标结论</strong>：神华在&quot;工程实绩&quot;（CCUS、鉴证、LSEG 评级）上领先，但在&quot;信息工程&quot;（范围三、财务量化、数字化管理平台）上落后于中煤能源。而监管与评级机构本月的动作，恰好全部指向后者 <sup class="cite">[1]</sup><sup class="cite">[3]</sup><sup class="cite">[6]</sup><sup class="cite">[7]</sup>。</blockquote>
+<h2 id="六-下月关注">六、下月关注</h2>
+<ul><li><strong>2026-12-20</strong>：ISSB 自然相关披露国内意见征集截止，是否提交行业意见将决定煤炭行业在自然议题上的话语权 <sup class="cite">[3]</sup>。</li><li><strong>12 月内</strong>：财政部《气候准则》煤炭等 9 行业应用指南正式稿有望发布，需第一时间比对披露要求差异 <sup class="cite">[4]</sup>。</li><li><strong>12 月起</strong>：更多省份公示 2027 年度全国碳市场重点排放单位名录，需核对下属单位纳入情况 <sup class="cite">[9]</sup>。</li><li><strong>2027-03 年报季</strong>：范围三首次披露的准备工作进入倒计时，若 12 月未启动，将挤压鉴证时间 <sup class="cite">[5]</sup><sup class="cite">[30]</sup>。</li><li><strong>风险提示</strong>：MSCI ESG 5.0 模型已于 2026 年 3 月实施、覆盖逾 16,000 家公司 <sup class="cite">[31]</sup>，方法论变更对煤炭等高碳行业的权重调整尚未完全显现，建议在 2027 年一季度评级结果发布后复核。</li></ul>
+<h2 id="附录-a-评级与评价快照">附录 A 评级与评价快照</h2>
+<div class='tw'><table><thead><tr><th style="text-align:left">机构</th><th style="text-align:left">评级/得分</th><th style="text-align:left">时点</th><th style="text-align:left">同业位置</th><th style="text-align:left">备注</th></tr></thead><tbody><tr><td style="text-align:left">MSCI</td><td style="text-align:left">BB</td><td style="text-align:left">2026-06-29</td><td style="text-align:left">A 股石油天然气与消费用燃料 18 家中第 5</td><td style="text-align:left">2023—2026 连续四年 BB <sup class="cite">[31]</sup></td></tr><tr><td style="text-align:left">LSEG（伦交所）</td><td style="text-align:left">A</td><td style="text-align:left">2026-08-15</td><td style="text-align:left">A 股同业 23 家中第 1</td><td style="text-align:left">由 A- 上调；兖矿 A- 第 2 <sup class="cite">[32]</sup></td></tr><tr><td style="text-align:left">中证指数</td><td style="text-align:left">AA</td><td style="text-align:left">2024 年度报告口径</td><td style="text-align:left">—</td><td style="text-align:left">中证 ESG 评价方法 V4.0 已发布 <sup class="cite">[6]</sup><sup class="cite">[33]</sup></td></tr><tr><td style="text-align:left">Wind</td><td style="text-align:left">AA</td><td style="text-align:left">2024 年度报告口径</td><td style="text-align:left">—</td><td style="text-align:left"><sup class="cite">[33]</sup></td></tr><tr><td style="text-align:left">S&amp;P Global CSA</td><td style="text-align:left">43/100</td><td style="text-align:left">2024 年度报告口径</td><td style="text-align:left">—</td><td style="text-align:left"><sup class="cite">[33]</sup></td></tr><tr><td style="text-align:left">CDP</td><td style="text-align:left">气候变化 C / 水安全 B-</td><td style="text-align:left">2024 年度报告口径</td><td style="text-align:left">—</td><td style="text-align:left"><sup class="cite">[33]</sup></td></tr><tr><td style="text-align:left">香港会计师公会</td><td style="text-align:left">最佳企业管治及 ESG 奖「ESG 特别提名」</td><td style="text-align:left">2026-11-05</td><td style="text-align:left">主板上市类别</td><td style="text-align:left">本届表彰 35 家 <sup class="cite">[27]</sup></td></tr></tbody></table></div>
+<blockquote>注：不同体系评分口径不可横向比较，仅在同一体系内做同业对比。中证、Wind、S&amp;P、CDP 数据取自 2025 年 3 月港股公告所载 2024 年度评价结果 <sup class="cite">[33]</sup>，2025 年度最新值需以各机构当期披露为准。</blockquote>
+<h2 id="附录-b-本月事件日历">附录 B 本月事件日历</h2>
+<div class="tl">
+<div class="ev"><div class="d">2026-10-24</div><div class="t">神华 2026 年第三季度报告披露，单季营收创同期新高 [22][23]</div></div>
+<div class="ev"><div class="d">2026-10-28</div><div class="t">财政部《气候准则》应用指南及电力、钢铁、煤炭等 9 行业指南征求意见情况公开 [4]</div></div>
+<div class="ev"><div class="d">2026-11-02</div><div class="t">中证 ESG 评级结果引发治理架构升级潮，多家 A 股设"战略与 ESG 委员会" [7]</div></div>
+<div class="ev"><div class="d">2026-11-03</div><div class="t">山西晋城煤炭企业碳排放标准化试点入选国家级试点（煤炭行业首个）[18]</div></div>
+<div class="ev"><div class="d">2026-11-04</div><div class="t">《实施全面节约战略行动方案》发布 [17]</div></div>
+<div class="ev"><div class="d">2026-11-05</div><div class="t">香港会计师公会公布 2026 年度最佳企业管治及 ESG 奖，神华获 ESG 特别提名 [27]</div></div>
+<div class="ev"><div class="d">2026-11-06</div><div class="t">财政部会计司就 ISSB《自然相关披露（征求意见稿）》公开征求意见 [3]</div></div>
+<div class="ev"><div class="d">2026-11-09</div><div class="t">多地公示 2027 年度全国碳市场重点排放单位名录，管控边界清晰化 [9]</div></div>
+<div class="ev"><div class="d">2026-11-10</div><div class="t">神华披露投资者关系活动记录表，说明产量下降四项原因 [26]</div></div>
+<div class="ev"><div class="d">2026-11-11</div><div class="t">财政部印发《会计改革与发展"十五五"规划》，明确 2030 年准则体系目标 [1][2]</div></div>
+<div class="ev"><div class="d">2026-11-11</div><div class="t">华证指数在进博会发布 A 股绿色低碳先锋榜与港股通 ESG 报告 [37]</div></div>
+<div class="ev"><div class="d">2026-11-13</div><div class="t">《气候信息披露：让企业低碳转型看得见》深度报道，披露首个强制披露季数据 [5]</div></div>
+<div class="ev"><div class="d">2026-11-14</div><div class="t">神华披露 2026 年 10 月份主要运营数据 [25]</div></div>
+<div class="ev"><div class="d">2026-11-15</div><div class="t">神华获财联社 2026 ESG 致远奖 [28]</div></div>
+<div class="ev"><div class="d">2026-11-18</div><div class="t">我国牵头提出的煤矿区甲烷逸散排放监测国际标准在 ISO 立项 [15]</div></div>
+</div>
+<h2 id="附录-c-信息来源">附录 C 信息来源</h2>
+<div class='tw'><table><thead><tr><th style="text-align:left">编号</th><th style="text-align:left">机构</th><th style="text-align:left">日期</th><th style="text-align:left">链接</th></tr></thead><tbody><tr><td style="text-align:left">1</td><td style="text-align:left">财政部《会计改革与发展&quot;十五五&quot;规划》</td><td style="text-align:left">2026-11-11</td><td style="text-align:left"><a href="http://app.mof.gov.cn/mofmobile2026/zcfb/202611/t20261111_4004450.htm">链接</a></td></tr><tr><td style="text-align:left">2</td><td style="text-align:left">财政部&quot;十五五&quot;时期会计高质量发展新闻发布会实录</td><td style="text-align:left">2026-11-11</td><td style="text-align:left"><a href="http://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202611/t20261111_4004515.htm">链接</a></td></tr><tr><td style="text-align:left">3</td><td style="text-align:left">财政部会计司 ISSB 自然相关披露征求意见函</td><td style="text-align:left">2026-11-11</td><td style="text-align:left"><a href="https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/czyw/202611/t20261109_4004283.htm">链接</a></td></tr><tr><td style="text-align:left">4</td><td style="text-align:left">财政部气候准则应用指南及 9 行业指南征求意见（世纪新能源网）</td><td style="text-align:left">2026-10-28</td><td style="text-align:left"><a href="https://www.ne21.com/news/show-231766.html">链接</a></td></tr><tr><td style="text-align:left">5</td><td style="text-align:left">第一财经《气候信息披露：让企业低碳转型看得见》</td><td style="text-align:left">2026-11-13</td><td style="text-align:left"><a href="https://www.yicai.com/news/103439347.html">链接</a></td></tr><tr><td style="text-align:left">6</td><td style="text-align:left">中证指数公司发布新版中证 ESG 评价方法 V4.0（每日经济新闻）</td><td style="text-align:left">2026-09-15</td><td style="text-align:left"><a href="https://www.nbd.com.cn/articles/2026-09-15/4582053.html">链接</a></td></tr><tr><td style="text-align:left">7</td><td style="text-align:left">中国证券报《从&quot;年报附录&quot;到&quot;战略决策&quot;》</td><td style="text-align:left">2026-11-02</td><td style="text-align:left"><a href="https://www.cs.com.cn/esg/2026/11/02/detail_2026110210049020.html">链接</a></td></tr><tr><td style="text-align:left">8</td><td style="text-align:left">生态环境部全国碳市场 2025、2026 年度配额总量和分配方案</td><td style="text-align:left">2026-09</td><td style="text-align:left"><a href="https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202609/W020260903551498752549.pdf">链接</a></td></tr><tr><td style="text-align:left">9</td><td style="text-align:left">中国能源报《全国碳市场管控边界进一步清晰》</td><td style="text-align:left">2026-11-09</td><td style="text-align:left"><a href="http://paper.people.com.cn/zgnyb/pad/content/202611/09/content_30190710.html">链接</a></td></tr><tr><td style="text-align:left">10</td><td style="text-align:left">第一财经研究院碳市场月报</td><td style="text-align:left">2026-11-16</td><td style="text-align:left"><a href="https://cbnri.yicai.com/news/5447025.html">链接</a></td></tr><tr><td style="text-align:left">11</td><td style="text-align:left">生态环境部《全国碳市场发展报告》</td><td style="text-align:left">2026-09</td><td style="text-align:left"><a href="https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202609/W020260920730894576289.pdf">链接</a></td></tr><tr><td style="text-align:left">12</td><td style="text-align:left">商务部就欧盟 CBAM 正式实施答记者问</td><td style="text-align:left">2026-01-07</td><td style="text-align:left"><a href="https://chinawto.mofcom.gov.cn/article/jsbl/zszc/202601/20260103614933.shtml">链接</a></td></tr><tr><td style="text-align:left">13</td><td style="text-align:left">财新《欧盟 CBAM 正式实施 对中国钢铁行业影响几何》</td><td style="text-align:left">2026-01-13</td><td style="text-align:left"><a href="https://www.caixin.com/2026-01-13/102405942.html">链接</a></td></tr><tr><td style="text-align:left">14</td><td style="text-align:left">新京报《欧盟碳关税&quot;紧箍&quot;》</td><td style="text-align:left">2026-04-30</td><td style="text-align:left"><a href="https://www.bjnews.com.cn/detail/1777550420129080.html">链接</a></td></tr><tr><td style="text-align:left">15</td><td style="text-align:left">市场监管总局 煤矿区甲烷逸散排放监测国际标准在 ISO 立项</td><td style="text-align:left">2026-11-18</td><td style="text-align:left"><a href="https://www.sac.gov.cn/xw/bzhdt/art/2026/art_0b3baaaefab34fe0b29d5c975984357a.html">链接</a></td></tr><tr><td style="text-align:left">16</td><td style="text-align:left">《煤炭工业发展&quot;十五五&quot;规划》</td><td style="text-align:left">2026-08</td><td style="text-align:left"><a href="https://www.gov.cn/zhengce/zhengceku/202608/P020260810649159236627.pdf">链接</a></td></tr><tr><td style="text-align:left">17</td><td style="text-align:left">《实施全面节约战略行动方案》</td><td style="text-align:left">2026-11-04</td><td style="text-align:left"><a href="https://www.gov.cn/zhengce/zhengceku/202611/P020261104769546602369.pdf">链接</a></td></tr><tr><td style="text-align:left">18</td><td style="text-align:left">晋城市政府 首个国家级煤炭企业碳排放标准化试点建设</td><td style="text-align:left">2026-11-03</td><td style="text-align:left"><a href="https://www.jcgov.gov.cn/dtxx/jcdt/202611/t20261103_2408179.shtml">链接</a></td></tr><tr><td style="text-align:left">19</td><td style="text-align:left">生态环境部《中国应对气候变化的政策与行动 2026 年度报告》</td><td style="text-align:left">2026-10</td><td style="text-align:left"><a href="https://english.mee.gov.cn/Resources/Reports/reports/202611/P020261109729492239703.pdf">链接</a></td></tr><tr><td style="text-align:left">20</td><td style="text-align:left">新浪财经《中国 20 个在运 CCUS 项目大盘点》</td><td style="text-align:left">2026-10-19</td><td style="text-align:left"><a href="https://finance.sina.com.cn/wm/2026-10-19/doc-inivtynp6127186.shtml">链接</a></td></tr><tr><td style="text-align:left">21</td><td style="text-align:left">新华网《二氧化碳&quot;变废为宝&quot;激活产业新动能》</td><td style="text-align:left">2026-07-13</td><td style="text-align:left"><a href="https://www.news.cn/fortune/20260713/6f0b4b43b7a0485a9a9ad635de44f95f/c.html">链接</a></td></tr><tr><td style="text-align:left">22</td><td style="text-align:left">中国神华 2026 年第三季度报告</td><td style="text-align:left">2026-10-24</td><td style="text-align:left"><a href="http://static.cninfo.com.cn/finalpage/2026-10-24/1225620903.PDF">链接</a></td></tr><tr><td style="text-align:left">23</td><td style="text-align:left">新浪财经《煤市&quot;淡季不淡&quot;！中国神华第三季度营收超千亿》</td><td style="text-align:left">2026-10-24</td><td style="text-align:left"><a href="https://finance.sina.com.cn/roll/2026-10-24/doc-iniwiyzn0393615.shtml">链接</a></td></tr><tr><td style="text-align:left">24</td><td style="text-align:left">中国神华 2026 年 9 月份主要运营数据公告</td><td style="text-align:left">2026-10-15</td><td style="text-align:left"><a href="http://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12641838&amp;stockid=601088">链接</a></td></tr><tr><td style="text-align:left">25</td><td style="text-align:left">中国神华 2026 年 10 月份主要运营数据公告</td><td style="text-align:left">2026-11-14</td><td style="text-align:left"><a href="https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllMemordDetail.php?stockid=601088">链接</a></td></tr><tr><td style="text-align:left">26</td><td style="text-align:left">中国神华投资者关系活动记录表（3Q26 业绩说明会）</td><td style="text-align:left">2026-11-10</td><td style="text-align:left"><a href="http://infonotice.sylapp.cn/LC_NotTextAnnouncement/2026/11/10/847648915567.PDF">链接</a></td></tr><tr><td style="text-align:left">27</td><td style="text-align:left">国家能源集团 中国神华获香港会计师公会 2026 年度最佳企业管治及 ESG 奖</td><td style="text-align:left">2026-11-11</td><td style="text-align:left"><a href="https://www.chnenergy.com.cn/gjnyjtww/newCE0302/202611/c9bf52ab91424c22940a5912ff86b189.shtml">链接</a></td></tr><tr><td style="text-align:left">28</td><td style="text-align:left">中国神华荣获财联社 2026 ESG 致远奖</td><td style="text-align:left">2026-11-15</td><td style="text-align:left"><a href="http://www.shenhuachina.cn/zgshww/xwtt/newslist.shtml">链接</a></td></tr><tr><td style="text-align:left">29</td><td style="text-align:left">物资公司绿色供应链案例入选《2026 企业 ESG 实践报告》</td><td style="text-align:left">2026-09-27</td><td style="text-align:left"><a href="http://hk.csec.com/zgshww/xwtt/newslist.shtml">链接</a></td></tr><tr><td style="text-align:left">30</td><td style="text-align:left">证券之星 中国神华 2025 年度 ESG 报告解读（含排放与目标数据）</td><td style="text-align:left">2026-05-14</td><td style="text-align:left"><a href="https://finance.stockstar.com/RB2026051400009361.shtml">链接</a></td></tr><tr><td style="text-align:left">31</td><td style="text-align:left">新浪财经 中国神华 MSCI ESG 评级维持 BB</td><td style="text-align:left">2026-06-29</td><td style="text-align:left"><a href="https://www.sohu.com/a/1043449824_122014422">链接</a></td></tr><tr><td style="text-align:left">32</td><td style="text-align:left">新浪财经 中国神华伦交所 ESG 评级上升至 A</td><td style="text-align:left">2026-08-16</td><td style="text-align:left"><a href="https://finance.sina.com.cn/stock/aiassist/esgpj/2026-08-17/doc-ininqpez7889479.shtml">链接</a></td></tr><tr><td style="text-align:left">33</td><td style="text-align:left">中国神华港股海外监管公告（评级一览）</td><td style="text-align:left">2025-03-21</td><td style="text-align:left"><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2025/0321/2025032101911_c.pdf">链接</a></td></tr><tr><td style="text-align:left">34</td><td style="text-align:left">中国神华 3Q26 业绩及经营情况电话会纪要</td><td style="text-align:left">2026-11-02</td><td style="text-align:left"><a href="https://www.echo.sh.cn/static/research/62594.html">链接</a></td></tr><tr><td style="text-align:left">35</td><td style="text-align:left">中国中煤能源 2025 年度 ESG 报告</td><td style="text-align:left">2026-03-28</td><td style="text-align:left"><a href="http://static.cninfo.com.cn/finalpage/2026-03-28/1225046907.PDF">链接</a></td></tr><tr><td style="text-align:left">36</td><td style="text-align:left">证券之星 中煤能源 2025 年度 ESG 报告解读</td><td style="text-align:left">2026-06-05</td><td style="text-align:left"><a href="https://finance.stockstar.com/RB2026060500020178.shtml">链接</a></td></tr><tr><td style="text-align:left">37</td><td style="text-align:left">新浪财经 华证指数进博会发布绿色低碳榜单与港股通 ESG 报告</td><td style="text-align:left">2026-11-11</td><td style="text-align:left"><a href="https://finance.sina.com.cn/roll/2026-11-11/doc-iniykkqa9092534.shtml">链接</a></td></tr></tbody></table></div>
+<h2 id="附录-d-方法与免责">附录 D 方法与免责</h2>
+<p><strong>信息采集</strong>：按&quot;国内政策 / 国际规则 / 评级指数 / 行业 / 客户公司 / 对标企业&quot;六个方向分层检索，正文每条事实均标注来源编号，可在附录 C 回溯原文。</p>
+<p><strong>筛选口径</strong>：官方原文优先于媒体转述；同一事件多源报道合并为一条并取最权威来源；自媒体仅用于发现线索、不作引用。影响量级判定：<strong>高</strong>＝产生合规义务或可测算成本收入，<strong>中</strong>＝改变预期与同业基准，<strong>低</strong>＝背景与宣示性。</p>
+<p><strong>已知局限</strong>：</p>
+<ol><li>神华 2025 年排放、强度、目标进展数据取自第三方解读 <sup class="cite">[30]</sup>，正式数值以公司 ESG 报告原文为准；</li><li>兖矿能源、陕西煤业本期可比数据未取得完整口径，对标表中留空，不作推测；</li><li>中证、Wind、S&amp;P、CDP 评级为 2024 年度口径 <sup class="cite">[33]</sup>，2025 年度最新值尚未在公开渠道确认；</li><li>范围三排放因公司尚未披露，本报告不对其数值做任何估算。</li></ol>
+<p><strong>免责</strong>：本报告为 ESG 信息监测与分析，不构成投资建议；涉及监管要求的条款，请以主管部门发布原文为准。</p>
+<footer class="doc-foot">本文件由 esg-monthly-report 技能生成 · 01_中国神华_ESG月报_2026-11.md</footer>
+</div></body></html>

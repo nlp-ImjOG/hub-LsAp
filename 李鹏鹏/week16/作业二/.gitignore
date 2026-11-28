@@ -1,0 +1,13 @@
+# 运行产物
+.cache/
+__pycache__/
+*.pyc
+.ruff_cache/
+
+# 大体积中间数据（可由 README 的命令重新生成）
+data/docs.jsonl
+data/docs_semantic.jsonl
+data/hits.jsonl
+data/armA/docs_A.jsonl
+data/armA/audit_A.json
+data/armB/sources_B.json

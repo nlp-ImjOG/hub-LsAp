@@ -1,0 +1,569 @@
+{
+ "n_total": 247,
+ "n_award": 61,
+ "n_award_amount": 47,
+ "amount_award_sum": 8777.06,
+ "amount_award_mean": 186.75,
+ "amount_award_median": 85.49,
+ "n_with_amount": 86,
+ "amount_coverage": 34.8,
+ "amount_sum": 18338.59,
+ "amount_mean": 213.24,
+ "amount_median": 82.75,
+ "amount_p25": 35.53,
+ "amount_p75": 200.0,
+ "amount_max": 1304.91,
+ "by_category": [
+  {
+   "name": "碳核查/核算",
+   "n": 48,
+   "amount": 11096.55,
+   "with_amount": 25
+  },
+  {
+   "name": "碳资产/碳交易",
+   "n": 23,
+   "amount": 3310.1,
+   "with_amount": 9
+  },
+  {
+   "name": "碳足迹",
+   "n": 41,
+   "amount": 1944.636,
+   "with_amount": 18
+  },
+  {
+   "name": "ESG报告/披露",
+   "n": 72,
+   "amount": 777.1863999999999,
+   "with_amount": 18
+  },
+  {
+   "name": "双碳战略/规划",
+   "n": 11,
+   "amount": 670.7,
+   "with_amount": 2
+  },
+  {
+   "name": "ESG评级/数据",
+   "n": 13,
+   "amount": 267.8,
+   "with_amount": 7
+  },
+  {
+   "name": "ESG咨询/顾问",
+   "n": 14,
+   "amount": 247.82,
+   "with_amount": 6
+  },
+  {
+   "name": "绿色供应链/贸易",
+   "n": 14,
+   "amount": 23.8,
+   "with_amount": 1
+  },
+  {
+   "name": "转型金融/绿色金融",
+   "n": 6,
+   "amount": 0.0,
+   "with_amount": 0
+  },
+  {
+   "name": "其他",
+   "n": 5,
+   "amount": 0.0,
+   "with_amount": 0
+  }
+ ],
+ "by_region": [
+  {
+   "name": "全国/未标注",
+   "n": 146,
+   "amount": 7778.269999999999,
+   "with_amount": 28
+  },
+  {
+   "name": "内蒙古",
+   "n": 4,
+   "amount": 1885.0,
+   "with_amount": 4
+  },
+  {
+   "name": "广东",
+   "n": 8,
+   "amount": 1462.8944,
+   "with_amount": 6
+  },
+  {
+   "name": "贵州",
+   "n": 2,
+   "amount": 800.0,
+   "with_amount": 1
+  },
+  {
+   "name": "青海",
+   "n": 2,
+   "amount": 754.37,
+   "with_amount": 2
+  },
+  {
+   "name": "重庆",
+   "n": 3,
+   "amount": 700.8,
+   "with_amount": 2
+  },
+  {
+   "name": "天津",
+   "n": 1,
+   "amount": 635.0,
+   "with_amount": 1
+  },
+  {
+   "name": "辽宁",
+   "n": 5,
+   "amount": 583.776,
+   "with_amount": 4
+  },
+  {
+   "name": "上海",
+   "n": 10,
+   "amount": 582.6,
+   "with_amount": 6
+  },
+  {
+   "name": "福建",
+   "n": 4,
+   "amount": 558.0,
+   "with_amount": 2
+  },
+  {
+   "name": "江苏",
+   "n": 4,
+   "amount": 554.0,
+   "with_amount": 3
+  },
+  {
+   "name": "北京",
+   "n": 18,
+   "amount": 534.8,
+   "with_amount": 8
+  },
+  {
+   "name": "湖南",
+   "n": 2,
+   "amount": 260.0,
+   "with_amount": 2
+  },
+  {
+   "name": "河南",
+   "n": 2,
+   "amount": 221.77,
+   "with_amount": 1
+  },
+  {
+   "name": "新疆",
+   "n": 2,
+   "amount": 218.0,
+   "with_amount": 2
+  },
+  {
+   "name": "陕西",
+   "n": 3,
+   "amount": 198.6,
+   "with_amount": 2
+  },
+  {
+   "name": "江西",
+   "n": 3,
+   "amount": 169.0,
+   "with_amount": 1
+  },
+  {
+   "name": "山东",
+   "n": 5,
+   "amount": 118.792,
+   "with_amount": 3
+  },
+  {
+   "name": "黑龙江",
+   "n": 2,
+   "amount": 116.66,
+   "with_amount": 2
+  },
+  {
+   "name": "四川",
+   "n": 3,
+   "amount": 73.2,
+   "with_amount": 1
+  },
+  {
+   "name": "河北",
+   "n": 1,
+   "amount": 54.7,
+   "with_amount": 1
+  },
+  {
+   "name": "湖北",
+   "n": 2,
+   "amount": 40.0,
+   "with_amount": 1
+  },
+  {
+   "name": "浙江",
+   "n": 5,
+   "amount": 32.0,
+   "with_amount": 2
+  },
+  {
+   "name": "安徽",
+   "n": 3,
+   "amount": 6.36,
+   "with_amount": 1
+  },
+  {
+   "name": "香港",
+   "n": 3,
+   "amount": 0.0,
+   "with_amount": 0
+  },
+  {
+   "name": "山西",
+   "n": 2,
+   "amount": 0.0,
+   "with_amount": 0
+  },
+  {
+   "name": "吉林",
+   "n": 1,
+   "amount": 0.0,
+   "with_amount": 0
+  },
+  {
+   "name": "云南",
+   "n": 1,
+   "amount": 0.0,
+   "with_amount": 0
+  }
+ ],
+ "by_buyer_type": [
+  {
+   "name": "其他企业",
+   "n": 145,
+   "amount": 13003.236000000004,
+   "with_amount": 43
+  },
+  {
+   "name": "央企/国企集团",
+   "n": 66,
+   "amount": 4093.0564000000004,
+   "with_amount": 34
+  },
+  {
+   "name": "政府/事业单位",
+   "n": 10,
+   "amount": 914.3,
+   "with_amount": 3
+  },
+  {
+   "name": "上市公司",
+   "n": 8,
+   "amount": 271.0,
+   "with_amount": 3
+  },
+  {
+   "name": "金融/证券",
+   "n": 18,
+   "amount": 57.0,
+   "with_amount": 3
+  }
+ ],
+ "by_buyer": [
+  {
+   "name": "未标注",
+   "n": 237,
+   "amount": 17953.506,
+   "with_amount": 77
+  },
+  {
+   "name": "中国广核电力股份有限公司",
+   "n": 1,
+   "amount": 199.9944,
+   "with_amount": 1
+  },
+  {
+   "name": "国投电力控股股份有限公司",
+   "n": 1,
+   "amount": 53.4,
+   "with_amount": 1
+  },
+  {
+   "name": "北京市发展和改革委员会",
+   "n": 1,
+   "amount": 47.8,
+   "with_amount": 1
+  },
+  {
+   "name": "中广核矿业有限公司",
+   "n": 1,
+   "amount": 31.8,
+   "with_amount": 1
+  },
+  {
+   "name": "中国大唐集团能源投资有限责任公司本部",
+   "n": 1,
+   "amount": 16.0,
+   "with_amount": 1
+  },
+  {
+   "name": "金杯汽车股份有限公司",
+   "n": 1,
+   "amount": 14.38,
+   "with_amount": 1
+  },
+  {
+   "name": "财通证券股份有限公司",
+   "n": 1,
+   "amount": 12.0,
+   "with_amount": 1
+  },
+  {
+   "name": "国投丰乐种业股份有限公司",
+   "n": 1,
+   "amount": 6.36,
+   "with_amount": 1
+  },
+  {
+   "name": "山东土地发展集团",
+   "n": 1,
+   "amount": 3.352,
+   "with_amount": 1
+  },
+  {
+   "name": "中信建投证券股份有限公司",
+   "n": 1,
+   "amount": 0.0,
+   "with_amount": 0
+  }
+ ],
+ "by_winner": [
+  {
+   "name": "未标注",
+   "n": 238,
+   "amount": 17953.506,
+   "with_amount": 77
+  },
+  {
+   "name": "未公开（需解锁）",
+   "n": 3,
+   "amount": 247.79440000000002,
+   "with_amount": 3
+  },
+  {
+   "name": "未公开（需登录查看）",
+   "n": 4,
+   "amount": 77.492,
+   "with_amount": 4
+  },
+  {
+   "name": "北京绿色交易所有限公司",
+   "n": 1,
+   "amount": 47.8,
+   "with_amount": 1
+  },
+  {
+   "name": "深圳市博奕方略企业管理咨询有限公司",
+   "n": 1,
+   "amount": 12.0,
+   "with_amount": 1
+  }
+ ],
+ "by_month": [
+  {
+   "month": "2024-11",
+   "n": 3,
+   "amount": 40.0
+  },
+  {
+   "month": "2024-12",
+   "n": 21,
+   "amount": 408.0
+  },
+  {
+   "month": "2025-01",
+   "n": 8,
+   "amount": 190.9
+  },
+  {
+   "month": "2025-02",
+   "n": 11,
+   "amount": 39.9
+  },
+  {
+   "month": "2025-03",
+   "n": 4,
+   "amount": 0.0
+  },
+  {
+   "month": "2025-04",
+   "n": 17,
+   "amount": 1517.0
+  },
+  {
+   "month": "2025-05",
+   "n": 13,
+   "amount": 163.84
+  },
+  {
+   "month": "2025-06",
+   "n": 9,
+   "amount": 83.8
+  },
+  {
+   "month": "2025-07",
+   "n": 16,
+   "amount": 1519.3400000000001
+  },
+  {
+   "month": "2025-08",
+   "n": 12,
+   "amount": 292.8
+  },
+  {
+   "month": "2025-09",
+   "n": 11,
+   "amount": 74.5
+  },
+  {
+   "month": "2025-10",
+   "n": 13,
+   "amount": 166.0
+  },
+  {
+   "month": "2025-11",
+   "n": 11,
+   "amount": 170.0
+  },
+  {
+   "month": "2025-12",
+   "n": 9,
+   "amount": 1649.3
+  },
+  {
+   "month": "2026-01",
+   "n": 12,
+   "amount": 1323.4959999999999
+  },
+  {
+   "month": "2026-02",
+   "n": 7,
+   "amount": 314.6
+  },
+  {
+   "month": "2026-03",
+   "n": 14,
+   "amount": 3046.07
+  },
+  {
+   "month": "2026-04",
+   "n": 6,
+   "amount": 2203.2
+  },
+  {
+   "month": "2026-05",
+   "n": 10,
+   "amount": 1063.0
+  },
+  {
+   "month": "2026-06",
+   "n": 3,
+   "amount": 0.0
+  },
+  {
+   "month": "2026-07",
+   "n": 9,
+   "amount": 406.7
+  },
+  {
+   "month": "2026-08",
+   "n": 1,
+   "amount": 73.2
+  },
+  {
+   "month": "2026-09",
+   "n": 5,
+   "amount": 179.0
+  },
+  {
+   "month": "2026-10",
+   "n": 9,
+   "amount": 246.00199999999998
+  },
+  {
+   "month": "2026-11",
+   "n": 13,
+   "amount": 3167.9444
+  }
+ ],
+ "by_source": [
+  {
+   "name": "203060双碳文库",
+   "n": 238,
+   "amount": 17953.506,
+   "with_amount": 77
+  },
+  {
+   "name": "电力能源招标网",
+   "n": 5,
+   "amount": 307.55440000000004,
+   "with_amount": 5
+  },
+  {
+   "name": "北京市发改委",
+   "n": 1,
+   "amount": 47.8,
+   "with_amount": 1
+  },
+  {
+   "name": "千里马招标网",
+   "n": 2,
+   "amount": 17.732,
+   "with_amount": 2
+  },
+  {
+   "name": "财通证券官网",
+   "n": 1,
+   "amount": 12.0,
+   "with_amount": 1
+  }
+ ],
+ "size_dist": [
+  {
+   "name": "≤10万",
+   "n": 3
+  },
+  {
+   "name": "10-30万",
+   "n": 13
+  },
+  {
+   "name": "30-50万",
+   "n": 17
+  },
+  {
+   "name": "50-100万",
+   "n": 17
+  },
+  {
+   "name": "100-300万",
+   "n": 18
+  },
+  {
+   "name": "300-1000万",
+   "n": 14
+  },
+  {
+   "name": "≥1000万",
+   "n": 4
+  }
+ ]
+}

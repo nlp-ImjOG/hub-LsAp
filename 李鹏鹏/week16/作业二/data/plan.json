@@ -1,0 +1,459 @@
+{
+ "generated_at": "2026-11-24T14:30:35",
+ "since": "2026-10-25",
+ "until": "2026-11-24",
+ "background_since": "2026-08-26",
+ "profile": {
+  "client": "中国神华能源股份有限公司",
+  "short": "中国神华",
+  "code": "601088",
+  "industry": "煤炭开采与洗选 / 煤电 / 煤化工",
+  "peers": [
+   "中煤能源",
+   "陕西煤业",
+   "兖矿能源"
+  ],
+  "focus": [
+   "甲烷",
+   "CCUS",
+   "范围三",
+   "评级提升"
+  ]
+ },
+ "channels": {
+  "gov": {
+   "tiers": [
+    "zhengcelibrary_gw",
+    "zhengcelibrary_bm"
+   ],
+   "pages": 1
+  },
+  "mee": {
+   "lists": [
+    "https://www.mee.gov.cn/zcwj/"
+   ],
+   "pages": 1
+  },
+  "cninfo": {
+   "columns": [
+    "sse",
+    "szse"
+   ],
+   "pages": 1
+  },
+  "web": {
+   "engine": "bing_rss",
+   "pages": 1
+  }
+ },
+ "queries": [
+  {
+   "qid": "policy_domestic-gov-01",
+   "direction": "policy_domestic",
+   "label": "国内政策与标准",
+   "tier": "T1",
+   "channel": "gov",
+   "query": "碳排放 配额 分配 方案",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_domestic-gov-02",
+   "direction": "policy_domestic",
+   "label": "国内政策与标准",
+   "tier": "T1",
+   "channel": "gov",
+   "query": "企业环境信息 依法披露",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_domestic-gov-03",
+   "direction": "policy_domestic",
+   "label": "国内政策与标准",
+   "tier": "T1",
+   "channel": "gov",
+   "query": "可持续披露 准则 征求意见",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_domestic-gov-04",
+   "direction": "policy_domestic",
+   "label": "国内政策与标准",
+   "tier": "T1",
+   "channel": "gov",
+   "query": "气候 披露 准则 行业应用指南",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_domestic-gov-05",
+   "direction": "policy_domestic",
+   "label": "国内政策与标准",
+   "tier": "T1",
+   "channel": "gov",
+   "query": "碳足迹 标识 认证",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_domestic-gov-06",
+   "direction": "policy_domestic",
+   "label": "国内政策与标准",
+   "tier": "T1",
+   "channel": "gov",
+   "query": "煤电 低碳化 改造",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_domestic-gov-07",
+   "direction": "policy_domestic",
+   "label": "国内政策与标准",
+   "tier": "T1",
+   "channel": "gov",
+   "query": "节能降碳 行动方案",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_domestic-gov-08",
+   "direction": "policy_domestic",
+   "label": "国内政策与标准",
+   "tier": "T1",
+   "channel": "gov",
+   "query": "碳市场 扩围 钢铁 水泥 电解铝",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_domestic-mee-01",
+   "direction": "policy_domestic",
+   "label": "国内政策与标准",
+   "tier": "T1",
+   "channel": "mee",
+   "query": "碳排放 配额 分配 方案",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_domestic-mee-02",
+   "direction": "policy_domestic",
+   "label": "国内政策与标准",
+   "tier": "T1",
+   "channel": "mee",
+   "query": "企业环境信息 依法披露",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_domestic-mee-03",
+   "direction": "policy_domestic",
+   "label": "国内政策与标准",
+   "tier": "T1",
+   "channel": "mee",
+   "query": "可持续披露 准则 征求意见",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_domestic-mee-04",
+   "direction": "policy_domestic",
+   "label": "国内政策与标准",
+   "tier": "T1",
+   "channel": "mee",
+   "query": "气候 披露 准则 行业应用指南",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_domestic-mee-05",
+   "direction": "policy_domestic",
+   "label": "国内政策与标准",
+   "tier": "T1",
+   "channel": "mee",
+   "query": "碳足迹 标识 认证",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_domestic-mee-06",
+   "direction": "policy_domestic",
+   "label": "国内政策与标准",
+   "tier": "T1",
+   "channel": "mee",
+   "query": "煤电 低碳化 改造",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_domestic-mee-07",
+   "direction": "policy_domestic",
+   "label": "国内政策与标准",
+   "tier": "T1",
+   "channel": "mee",
+   "query": "节能降碳 行动方案",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_domestic-mee-08",
+   "direction": "policy_domestic",
+   "label": "国内政策与标准",
+   "tier": "T1",
+   "channel": "mee",
+   "query": "碳市场 扩围 钢铁 水泥 电解铝",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_intl-web-01",
+   "direction": "policy_intl",
+   "label": "国际规则与标准",
+   "tier": "T1",
+   "channel": "web",
+   "query": "ISSB IFRS S2 征求意见",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_intl-web-02",
+   "direction": "policy_intl",
+   "label": "国际规则与标准",
+   "tier": "T1",
+   "channel": "web",
+   "query": "CSRD ESRS 简化 修订",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_intl-web-03",
+   "direction": "policy_intl",
+   "label": "国际规则与标准",
+   "tier": "T1",
+   "channel": "web",
+   "query": "CBAM 默认值 清缴 中国",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_intl-web-04",
+   "direction": "policy_intl",
+   "label": "国际规则与标准",
+   "tier": "T1",
+   "channel": "web",
+   "query": "SBTi 净零 标准 更新",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "policy_intl-web-05",
+   "direction": "policy_intl",
+   "label": "国际规则与标准",
+   "tier": "T1",
+   "channel": "web",
+   "query": "ISO 甲烷 监测 标准 立项",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "rating-web-01",
+   "direction": "rating",
+   "label": "评级与指数",
+   "tier": "T2",
+   "channel": "web",
+   "query": "MSCI ESG 评级 上调 下调",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "rating-web-02",
+   "direction": "rating",
+   "label": "评级与指数",
+   "tier": "T2",
+   "channel": "web",
+   "query": "标普 CSA 评分 企业",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "rating-web-03",
+   "direction": "rating",
+   "label": "评级与指数",
+   "tier": "T2",
+   "channel": "web",
+   "query": "CDP 评级 A 名单",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "rating-web-04",
+   "direction": "rating",
+   "label": "评级与指数",
+   "tier": "T2",
+   "channel": "web",
+   "query": "中证 ESG 评价方法 版本",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "rating-web-05",
+   "direction": "rating",
+   "label": "评级与指数",
+   "tier": "T2",
+   "channel": "web",
+   "query": "华证 ESG 评级 结果",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "industry-web-01",
+   "direction": "industry",
+   "label": "行业层面",
+   "tier": "T2",
+   "channel": "web",
+   "query": "煤炭 行业 十五五 规划",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "industry-web-02",
+   "direction": "industry",
+   "label": "行业层面",
+   "tier": "T2",
+   "channel": "web",
+   "query": "煤炭 甲烷 控排 试点",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "industry-web-03",
+   "direction": "industry",
+   "label": "行业层面",
+   "tier": "T2",
+   "channel": "web",
+   "query": "CCUS 示范 项目 投产",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "industry-web-04",
+   "direction": "industry",
+   "label": "行业层面",
+   "tier": "T2",
+   "channel": "web",
+   "query": "煤化工 能耗 双控 政策",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "client-cninfo-01",
+   "direction": "client",
+   "label": "客户公司",
+   "tier": "T1",
+   "channel": "cninfo",
+   "query": "中国神华",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "peer-cninfo-01a",
+   "direction": "peer",
+   "label": "对标企业",
+   "tier": "T1",
+   "channel": "cninfo",
+   "query": "中煤能源",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "peer-cninfo-01b",
+   "direction": "peer",
+   "label": "对标企业",
+   "tier": "T1",
+   "channel": "cninfo",
+   "query": "陕西煤业",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  },
+  {
+   "qid": "peer-cninfo-01c",
+   "direction": "peer",
+   "label": "对标企业",
+   "tier": "T1",
+   "channel": "cninfo",
+   "query": "兖矿能源",
+   "window": [
+    "2026-08-26",
+    "2026-11-24"
+   ]
+  }
+ ]
+}

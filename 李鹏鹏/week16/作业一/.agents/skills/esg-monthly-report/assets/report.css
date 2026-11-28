@@ -1,0 +1,170 @@
+/* ESG 月报样式：单文件 HTML，无外部依赖 */
+:root {
+  --ink: #0f172a;
+  --sub: #475569;
+  --line: #e2e8f0;
+  --accent: #0f766e;
+  --accent-soft: #ccfbf1;
+  --warn: #b45309;
+  --bg: #fff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #eef2f6;
+  color: var(--ink);
+  font: 16px/1.78 -apple-system, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  background: var(--bg);
+  padding: 58px 68px 72px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, .1);
+}
+
+/* 报头 */
+h1 {
+  font-size: 30px;
+  line-height: 1.3;
+  letter-spacing: -.4px;
+  margin: 0 0 6px;
+}
+
+h1 + p, h1 + blockquote { color: var(--sub); font-size: 14px; }
+
+h2 {
+  font-size: 20px;
+  margin: 44px 0 14px;
+  padding-bottom: 9px;
+  border-bottom: 2px solid var(--line);
+  letter-spacing: -.2px;
+}
+
+h3 { font-size: 16.5px; margin: 26px 0 8px; color: #0b3b39; }
+h4 { font-size: 15px; margin: 18px 0 6px; color: var(--sub); }
+
+p { margin: 10px 0; }
+strong { color: #082f2d; }
+
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid #99f6e4; }
+a:hover { border-bottom-color: var(--accent); }
+
+/* 目录 */
+.toc {
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px 22px;
+  margin: 26px 0 34px;
+  font-size: 14px;
+}
+
+.toc-t { font-weight: 700; color: var(--sub); letter-spacing: .5px; margin-bottom: 8px; }
+.toc ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 34px; }
+.toc li { margin: 4px 0; break-inside: avoid; }
+.toc li.lv2 { font-weight: 600; }
+.toc li.lv3 { padding-left: 14px; color: var(--sub); font-size: 13.5px; }
+.toc li.lv4 { padding-left: 28px; color: var(--sub); font-size: 13px; }
+
+/* 摘要引用 */
+blockquote {
+  margin: 16px 0;
+  padding: 14px 18px;
+  background: #f8fafc;
+  border-left: 3px solid var(--accent);
+  color: var(--sub);
+  font-size: 14px;
+  border-radius: 0 8px 8px 0;
+}
+
+/* 表格 */
+.tw { overflow-x: auto; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th {
+  background: #f1f5f9;
+  font-weight: 600;
+  color: #334155;
+  white-space: nowrap;
+}
+th, td { border: 1px solid var(--line); padding: 8px 11px; vertical-align: top; }
+tbody tr:nth-child(even) { background: #fcfdff; }
+tbody tr:hover { background: #f0fdfa; }
+
+/* 列表 */
+ul, ol { padding-left: 24px; margin: 10px 0; }
+li { margin: 6px 0; }
+li > ul { margin: 4px 0 8px; }
+li > ul > li { margin: 3px 0; color: var(--sub); font-size: 14.5px; }
+
+/* 引用编号 */
+sup.cite { color: var(--accent); font-size: 11px; font-weight: 600; padding: 0 1px; }
+
+/* 图片 */
+figure { margin: 20px 0; }
+img { max-width: 100%; border: 1px solid var(--line); border-radius: 10px; }
+figcaption { color: var(--sub); font-size: 12.5px; margin-top: 6px; text-align: center; }
+
+code {
+  background: #f1f5f9;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+
+hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
+
+/* KPI 卡片（正文原生 HTML 使用） */
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 20px 0 26px; }
+.kpi { background: #f8fafc; border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.kpi .v { font-size: 22px; font-weight: 700; color: var(--accent); letter-spacing: -.5px; }
+.kpi .l { font-size: 12.5px; color: var(--sub); margin-top: 2px; line-height: 1.5; }
+.kpi .d { font-size: 11.5px; color: #64748b; margin-top: 4px; }
+
+/* 影响评估色块 */
+.tag { display: inline-block; font-size: 11.5px; font-weight: 600; padding: 1px 7px;
+  border-radius: 999px; margin-right: 4px; }
+.tag.high { background: #fee2e2; color: #b91c1c; }
+.tag.mid { background: #fef3c7; color: #b45309; }
+.tag.low { background: #e0f2fe; color: #0369a1; }
+.tag.pos { background: #dcfce7; color: #15803d; }
+.tag.neg { background: #ffe4e6; color: #be123c; }
+
+/* 时间线 */
+.tl { border-left: 2px solid var(--accent-soft); margin: 18px 0; padding-left: 20px; }
+.tl .ev { margin: 14px 0; position: relative; }
+.tl .ev::before { content: ""; position: absolute; left: -26px; top: 7px; width: 9px;
+  height: 9px; border-radius: 50%; background: var(--accent); }
+.tl .d { font-size: 12.5px; color: var(--accent); font-weight: 700; }
+.tl .t { font-size: 14.5px; margin-top: 2px; }
+
+/* 提示条 */
+.note { background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px;
+  padding: 12px 16px; font-size: 14px; color: #78350f; margin: 16px 0; }
+.missing { color: var(--warn); }
+
+.doc-foot {
+  margin-top: 48px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+@media print {
+  body { background: #fff; }
+  .page { box-shadow: none; padding: 0; max-width: none; }
+  h2 { page-break-after: avoid; }
+  table, figure { page-break-inside: avoid; }
+}
+
+@media (max-width: 720px) {
+  .page { padding: 28px 20px; }
+  .toc ul { columns: 1; }
+  .kpis { grid-template-columns: repeat(2, 1fr); }
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>中国神华 ESG 月报（2026-11）</title>
+<style>/* ESG 月报样式：单文件 HTML，无外部依赖 */
+:root {
+  --ink: #0f172a;
+  --sub: #475569;
+  --line: #e2e8f0;
+  --accent: #0f766e;
+  --accent-soft: #ccfbf1;
+  --warn: #b45309;
+  --bg: #fff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #eef2f6;
+  color: var(--ink);
+  font: 16px/1.78 -apple-system, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  background: var(--bg);
+  padding: 58px 68px 72px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, .1);
+}
+
+/* 报头 */
+h1 {
+  font-size: 30px;
+  line-height: 1.3;
+  letter-spacing: -.4px;
+  margin: 0 0 6px;
+}
+
+h1 + p, h1 + blockquote { color: var(--sub); font-size: 14px; }
+
+h2 {
+  font-size: 20px;
+  margin: 44px 0 14px;
+  padding-bottom: 9px;
+  border-bottom: 2px solid var(--line);
+  letter-spacing: -.2px;
+}
+
+h3 { font-size: 16.5px; margin: 26px 0 8px; color: #0b3b39; }
+h4 { font-size: 15px; margin: 18px 0 6px; color: var(--sub); }
+
+p { margin: 10px 0; }
+strong { color: #082f2d; }
+
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid #99f6e4; }
+a:hover { border-bottom-color: var(--accent); }
+
+/* 目录 */
+.toc {
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px 22px;
+  margin: 26px 0 34px;
+  font-size: 14px;
+}
+
+.toc-t { font-weight: 700; color: var(--sub); letter-spacing: .5px; margin-bottom: 8px; }
+.toc ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 34px; }
+.toc li { margin: 4px 0; break-inside: avoid; }
+.toc li.lv2 { font-weight: 600; }
+.toc li.lv3 { padding-left: 14px; color: var(--sub); font-size: 13.5px; }
+.toc li.lv4 { padding-left: 28px; color: var(--sub); font-size: 13px; }
+
+/* 摘要引用 */
+blockquote {
+  margin: 16px 0;
+  padding: 14px 18px;
+  background: #f8fafc;
+  border-left: 3px solid var(--accent);
+  color: var(--sub);
+  font-size: 14px;
+  border-radius: 0 8px 8px 0;
+}
+
+/* 表格 */
+.tw { overflow-x: auto; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th {
+  background: #f1f5f9;
+  font-weight: 600;
+  color: #334155;
+  white-space: nowrap;
+}
+th, td { border: 1px solid var(--line); padding: 8px 11px; vertical-align: top; }
+tbody tr:nth-child(even) { background: #fcfdff; }
+tbody tr:hover { background: #f0fdfa; }
+
+/* 列表 */
+ul, ol { padding-left: 24px; margin: 10px 0; }
+li { margin: 6px 0; }
+li > ul { margin: 4px 0 8px; }
+li > ul > li { margin: 3px 0; color: var(--sub); font-size: 14.5px; }
+
+/* 引用编号 */
+sup.cite { color: var(--accent); font-size: 11px; font-weight: 600; padding: 0 1px; }
+
+/* 图片 */
+figure { margin: 20px 0; }
+img { max-width: 100%; border: 1px solid var(--line); border-radius: 10px; }
+figcaption { color: var(--sub); font-size: 12.5px; margin-top: 6px; text-align: center; }
+
+code {
+  background: #f1f5f9;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+
+hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
+
+/* KPI 卡片（正文原生 HTML 使用） */
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 20px 0 26px; }
+.kpi { background: #f8fafc; border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.kpi .v { font-size: 22px; font-weight: 700; color: var(--accent); letter-spacing: -.5px; }
+.kpi .l { font-size: 12.5px; color: var(--sub); margin-top: 2px; line-height: 1.5; }
+.kpi .d { font-size: 11.5px; color: #64748b; margin-top: 4px; }
+
+/* 影响评估色块 */
+.tag { display: inline-block; font-size: 11.5px; font-weight: 600; padding: 1px 7px;
+  border-radius: 999px; margin-right: 4px; }
+.tag.high { background: #fee2e2; color: #b91c1c; }
+.tag.mid { background: #fef3c7; color: #b45309; }
+.tag.low { background: #e0f2fe; color: #0369a1; }
+.tag.pos { background: #dcfce7; color: #15803d; }
+.tag.neg { background: #ffe4e6; color: #be123c; }
+
+/* 时间线 */
+.tl { border-left: 2px solid var(--accent-soft); margin: 18px 0; padding-left: 20px; }
+.tl .ev { margin: 14px 0; position: relative; }
+.tl .ev::before { content: ""; position: absolute; left: -26px; top: 7px; width: 9px;
+  height: 9px; border-radius: 50%; background: var(--accent); }
+.tl .d { font-size: 12.5px; color: var(--accent); font-weight: 700; }
+.tl .t { font-size: 14.5px; margin-top: 2px; }
+
+/* 提示条 */
+.note { background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px;
+  padding: 12px 16px; font-size: 14px; color: #78350f; margin: 16px 0; }
+.missing { color: var(--warn); }
+
+.doc-foot {
+  margin-top: 48px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+@media print {
+  body { background: #fff; }
+  .page { box-shadow: none; padding: 0; max-width: none; }
+  h2 { page-break-after: avoid; }
+  table, figure { page-break-inside: avoid; }
+}
+
+@media (max-width: 720px) {
+  .page { padding: 28px 20px; }
+  .toc ul { columns: 1; }
+  .kpis { grid-template-columns: repeat(2, 1fr); }
+}</style></head>
+<body><div class="page">
+<nav class="toc"><div class="toc-t">目录</div><ul><li class="lv2"><a href="#口径">口径</a></li><li class="lv2"><a href="#一-本月五个核心判断">一、本月五个核心判断</a></li><li class="lv2"><a href="#二-政策与标准动态">二、政策与标准动态</a></li><li class="lv2"><a href="#三-评级与指数">三、评级与指数</a></li><li class="lv2"><a href="#四-行业动态与最佳实践">四、行业动态与最佳实践</a></li><li class="lv2"><a href="#五-公司动态-esg-影响与建议">五、公司动态：ESG 影响与建议</a></li><li class="lv3"><a href="#5-1-2026-年-10-月运营数据-2026-11-14-s01">5.1 2026 年 10 月运营数据（2026-11-14）〔S01〕</a></li><li class="lv3"><a href="#5-2-收购国能新疆煤制气-50-股权-2026-11-17-s02">5.2 收购国能新疆煤制气 50% 股权（2026-11-17）〔S02〕</a></li><li class="lv3"><a href="#5-3-治理层变动-2026-10-10-s17">5.3 治理层变动（2026-10-10）〔S17〕</a></li><li class="lv3"><a href="#5-4-2026-年第三季度报告-2026-10-24-s22">5.4 2026 年第三季度报告（2026-10-24）〔S22〕</a></li><li class="lv2"><a href="#六-对标企业关键行动">六、对标企业关键行动</a></li><li class="lv2"><a href="#七-下月关注">七、下月关注</a></li><li class="lv2"><a href="#附录-a-数据局限">附录 A：数据局限</a></li><li class="lv2"><a href="#附录-b-台账与门禁">附录 B：台账与门禁</a></li></ul></nav>
+<h1 id="中国神华-esg-月报-2026-11">中国神华 ESG 月报（2026-11）</h1>
+<blockquote><strong>Arm B：有脚本作业</strong>——检索计划、结构化采集、正文抽取、去重分档、编号、门禁由 <code>esg_source_pipeline.py</code> 完成；本节判断与建议由模型写在脚本产出的事实台账之上。</blockquote>
+<h2 id="口径">口径</h2>
+<div class='tw'><table><thead><tr><th style="text-align:left">项</th><th style="text-align:left">内容</th></tr></thead><tbody><tr><td style="text-align:left">客户主体</td><td style="text-align:left">中国神华能源股份有限公司（601088.SH / 01088.HK）</td></tr><tr><td style="text-align:left">统计期</td><td style="text-align:left">2026-10-25 ~ 2026-11-24（背景窗 2026-08-26 起）</td></tr><tr><td style="text-align:left">行业</td><td style="text-align:left">煤炭开采与洗选、煤电、煤化工</td></tr><tr><td style="text-align:left">对标组</td><td style="text-align:left">中煤能源、陕西煤业、兖矿能源</td></tr><tr><td style="text-align:left">事实台账</td><td style="text-align:left"><code>data/armB/sources_B.json</code>（候选 233 篇 → 归并 226 起事件 → 入账 89 条）</td></tr><tr><td style="text-align:left">入账结构</td><td style="text-align:left">统计期内 25 条、背景窗 64 条；T1 权威源 84 条、T2 3 条、T3 2 条</td></tr></tbody></table></div>
+<h2 id="一-本月五个核心判断">一、本月五个核心判断</h2>
+<ol><li><strong>自然相关披露进入强制化前的最后窗口</strong>：财政部会计司 2026-11-09 发函（财会便函〔2026〕57号）就 ISSB《实务公告第 1 号——自然相关披露（征求意见稿）》征集意见，2026-12-20 前反馈<sup class="cite">[82]</sup>。该征求意见稿由 ISSB 于 2026-10-22 发布，反馈截止 2027-02-19（背景）<sup class="cite">[86]</sup>。神华矿区的水资源依赖将首次被要求&quot;按地点&quot;披露。</li><li><strong>中国碳市场被 CBAM 承认为&quot;有效碳价&quot;</strong>：欧盟（EU）2026/2498 实施法规落地，全国碳排放权交易体系进入认可碳价清单，CBAM 申报人可据此抵扣应清缴证书<sup class="cite">[83]</sup>。集团内化工与铝业务的对欧客户将要求经核证碳价凭证；化工板块内部碳价折算会因此上浮，制度背景见（背景）<sup class="cite">[84]</sup>。</li><li><strong>甲烷监测从企业自选升为国际标准</strong>：我国牵头的《煤矿区甲烷逸散排放监测与计量方法》在 ISO 立项，填补该领域国际标准空白<sup class="cite">[24]</sup>；集团内科环龙源环保参与编制<sup class="cite">[26]</sup>，科研总院相关技术在 COP31 展示<sup class="cite">[27]</sup>。</li><li><strong>煤炭&quot;十五五&quot;规划把煤改写为兜底能源</strong>：《煤炭工业发展&quot;十五五&quot;规划》已印发（背景）<sup class="cite">[81]</sup>，智能化与大型现代化产能目标将转化为资本开支，需在 ESG 报告&quot;气候相关资本支出&quot;中单列。</li><li><strong>四行业配额方案延续免费分配</strong>：全国碳市场 2025、2026 年度发电行业及 2026 年度钢铁、水泥、铝冶炼行业配额总量和分配方案已印发（背景）<sup class="cite">[75]</sup>，发电行业动态调整基准值，直接改写煤电成本曲线。</li></ol>
+<h2 id="二-政策与标准动态">二、政策与标准动态</h2>
+<div class='tw'><table><thead><tr><th style="text-align:left">状态</th><th style="text-align:left">事项</th><th style="text-align:left">与神华的关系</th></tr></thead><tbody><tr><td style="text-align:left">征求意见</td><td style="text-align:left">ISSB《自然相关披露》实务公告（ISSB/ED/2026/1），截止 2027-02-19</td><td style="text-align:left">按地点披露水资源依赖与生态影响，矿区资产需建立地点级台账<sup class="cite">[86]</sup></td></tr><tr><td style="text-align:left">征求意见（国内）</td><td style="text-align:left">财政部转发并征集意见，2026-12-20 前反馈<sup class="cite">[82]</sup></td><td style="text-align:left">国内准则与 ISSB 接轨的输入口，建议安环部＋财务部联合提交矿区实测数据诉求</td></tr><tr><td style="text-align:left">已生效</td><td style="text-align:left">CBAM 第三国碳价抵扣规则与认可机制清单<sup class="cite">[83]</sup></td><td style="text-align:left">对欧客户要求经核证碳价凭证；集团碳价折算模型需复核</td></tr><tr><td style="text-align:left">已公布</td><td style="text-align:left">简化版 ESRS（EU）2026/1563，2026-09-21 公布（背景）<sup class="cite">[85]</sup></td><td style="text-align:left">欧洲敞口小，但影响国际同业可比口径</td></tr><tr><td style="text-align:left">已印发</td><td style="text-align:left">全国碳市场四行业配额总量和分配方案（背景）<sup class="cite">[75]</sup></td><td style="text-align:left">发电免费配额基准值调整，影响履约成本</td></tr></tbody></table></div>
+<h2 id="三-评级与指数">三、评级与指数</h2>
+<ul><li><strong>中证 ESG 评价方法 V4.0</strong>：2026-09-15 发布、2026-09-21 首发结果（背景）<sup class="cite">[87]</sup>；新版重构指标框架、得分计算与评级规则，首评结果已披露<sup class="cite">[88]</sup>。旧版分数不具可比性，历史趋势线需重算。</li><li><strong>同业评级基线</strong>（背景）<sup class="cite">[89]</sup>：MSCI 体系内神华维持 BB，兖矿能源已升至 BBB 为煤炭行业最高档。神华在 MSCI 体系内落后同业一档，短板集中在治理与碳强度两项。</li></ul>
+<blockquote>口径提示：MSCI 为字母档、中证为 AAA–C 档，不可跨体系比较高低。</blockquote>
+<h2 id="四-行业动态与最佳实践">四、行业动态与最佳实践</h2>
+<div class='tw'><table><thead><tr><th style="text-align:left">事项</th><th style="text-align:left">量化 / 状态</th><th style="text-align:left">对神华的启示</th></tr></thead><tbody><tr><td style="text-align:left">ISO 煤矿区甲烷逸散监测标准立项<sup class="cite">[24]</sup></td><td style="text-align:left">全球首个该领域国际标准，涵盖天地一体化监测与通量核算</td><td style="text-align:left">提前把采空区、风排瓦斯实测数据入账，标准发布后可直接切换口径</td></tr><tr><td style="text-align:left">集团内单位参编该标准<sup class="cite">[26]</sup></td><td style="text-align:left">科环龙源环保参与编制</td><td style="text-align:left">内部已有技术储备，建议集团层面统一口径，避免各子分公司自定</td></tr><tr><td style="text-align:left">甲烷监测技术亮相 COP31<sup class="cite">[27]</sup></td><td style="text-align:left">展示规模约 300 吨级监测能力</td><td style="text-align:left">对外叙事素材，可用于投资者沟通</td></tr><tr><td style="text-align:left">《煤层气（煤矿瓦斯）排放标准》修订（背景）<sup class="cite">[25]</sup></td><td style="text-align:left">甲烷体积浓度 &gt;8% 且抽采纯量 &gt;10 m³/min 的瓦斯禁止排放；年度报告披露煤层气利用量 209.88 亿立方米</td><td style="text-align:left">直接产生合规义务与治理设施资本开支</td></tr><tr><td style="text-align:left">ISO 立项后的口径风险<sup class="cite">[24]</sup></td><td style="text-align:left">监测方法、数据质量与报告体系被标准化</td><td style="text-align:left">范围一甲烷核算口径将被重写，需提前做双口径并行</td></tr></tbody></table></div>
+<h2 id="五-公司动态-esg-影响与建议">五、公司动态：ESG 影响与建议</h2>
+<h3 id="5-1-2026-年-10-月运营数据-2026-11-14-s01">5.1 2026 年 10 月运营数据（2026-11-14）<sup class="cite">[01]</sup></h3>
+<p>公告原文为表格型 PDF，运营指标数字与单位分列，脚本未能自动配对提取，以下数字由人工从原文核对后引用：商品煤产量 4,530 万吨（同比 +10.2%）、煤炭销售量 5,260 万吨（同比 +2.1%）；1–10 月累计产量 4.272 亿吨（−1.1%）、累计销量 5.132 亿吨（+0.3%）。</p>
+<p><strong>口径变更</strong>：自 2026 年 4 月起主要运营数据包含新并入资产业务量，上年同期已追溯调整<sup class="cite">[01]</sup>。</p>
+<p><strong>影响</strong>：产量同比 +10.2% 与累计 −1.1% 方向背离，说明增量主要来自并购而非内生增产。按新口径重算，范围一排放总量上升但单位产量强度可能改善——<strong>必须在 2026 年报中说明口径，否则会被读成减排成果</strong>。 <strong>动作</strong>：安环部＋财务部在 2026 年报编制前（2027-01）出具&quot;口径变更对范围一总量与强度的影响说明&quot;，附追溯调整表。</p>
+<h3 id="5-2-收购国能新疆煤制气-50-股权-2026-11-17-s02">5.2 收购国能新疆煤制气 50% 股权（2026-11-17）<sup class="cite">[02]</sup></h3>
+<p>全资子公司国能新疆能源化工以 6.18 亿元受让国家能源集团西部能源所持 50% 股权，2026-11-16 签署股权转让协议。标的为准东 20 亿立方米/年煤制天然气项目，总投资概算 150.77 亿元，2025 年 10 月开工，计划 2027 年底投料试车。</p>
+<p><strong>E 维</strong>：煤制气属高耗水高排放环节，投产后抬升范围一排放与用水强度；准东水资源约束是实质性风险。 <strong>G 维</strong>：关联交易，需在年报及 ESG 报告中说明定价公允性与决策程序。 <strong>动作</strong>：财务部＋安环部在 2027 年预算编制前建立该项目碳排放与用水基线，纳入集团碳数据平台；ESG 报告组在 2026 年报&quot;气候相关资本支出&quot;一节单列。</p>
+<h3 id="5-3-治理层变动-2026-10-10-s17">5.3 治理层变动（2026-10-10）<sup class="cite">[17]</sup></h3>
+<p>总会计师、董事会秘书离任（背景）。ESG 治理架构中&quot;财务口径责任人&quot;与&quot;披露责任人&quot;同时变更，属披露链条的中继风险点。 <strong>动作</strong>：在 2026 年报披露前（2027-02）确认新任责任人已就位，并将气候相关财务披露的签署流程重新走一遍内部会签。</p>
+<h3 id="5-4-2026-年第三季度报告-2026-10-24-s22">5.4 2026 年第三季度报告（2026-10-24）<sup class="cite">[22]</sup></h3>
+<p>三季报已披露（背景）。报告期内无新增重大环境行政处罚披露。 <strong>动作</strong>：无需新增动作，但需作为 2026 年报范围一/二排放数据的核对基线。</p>
+<h2 id="六-对标企业关键行动">六、对标企业关键行动</h2>
+<div class='tw'><table><thead><tr><th style="text-align:left">公司</th><th style="text-align:left">关键动作</th><th style="text-align:left">可对比性</th></tr></thead><tbody><tr><td style="text-align:left">陕西煤业<sup class="cite">[30]</sup><sup class="cite">[37]</sup></td><td style="text-align:left">2026 年第三季度报告（2026-10-28）；2026 年 10 月主要运营数据公告（2026-11-07）</td><td style="text-align:left">同口径 A+H；月度运营数据披露节奏与神华一致，可直接对齐产量与销量增速</td></tr><tr><td style="text-align:left">兖矿能源<sup class="cite">[35]</sup><sup class="cite">[34]</sup><sup class="cite">[68]</sup></td><td style="text-align:left">2026 年第三季度报告（2026-10-31）；&quot;提质增效重回报&quot;2.0 行动方案；三季度主要运营数据公告</td><td style="text-align:left"><strong>最直接的对标压力源</strong>：MSCI BBB 领先神华一档，且有专项回报行动方案可对照其资本开支叙事</td></tr><tr><td style="text-align:left">中煤能源<sup class="cite">[72]</sup></td><td style="text-align:left">2026 年第三季度报告（2026-10-24）</td><td style="text-align:left">同口径 A+H，可用于排放强度对比</td></tr></tbody></table></div>
+<h2 id="七-下月关注">七、下月关注</h2>
+<ol><li>2026-12-20 财政部 ISSB 自然相关披露意见反馈截止——12 月上旬定稿。</li><li>2026 年报&quot;气候相关资本支出&quot;与&quot;范围一口径变更&quot;两节的数据准备。</li><li>中证 V4.0 首评结果对神华档位的影响，以及是否按新版规则重述历史分数。</li></ol>
+<h2 id="附录-a-数据局限">附录 A：数据局限</h2>
+<ul><li>台账为<strong>候选池</strong>：脚本按关键词与权威度收窄，但&quot;与神华是否相关&quot;仍需人工判断。本期 policy_domestic 方向入账 8 条中，乐东气田批复<sup class="cite">[74]</sup>、铁路科技创新规划<sup class="cite">[76]</sup>、会计改革与发展规划<sup class="cite">[81]</sup>等与本客户无直接关系，未被引用。</li><li><strong>表格型 PDF 的数字不可自动抽取</strong>：神华月度运营数据公告、季报主要指标表在抽取时丢失&quot;数字—单位&quot;对应关系，本报告相关数字为人工从原文核对，脚本的 <code>numbers</code> 字段对这些条目为空。</li><li>金额类数字仅采用公告原文口径，未做审计；<code>S15</code>、<code>S16</code> 等公告中的百分比为限售股解禁比例，非环境绩效指标，不作为量化依据。</li><li>评级信息中 MSCI 结果来自二手报道<sup class="cite">[89]</sup>，正式引用应以 MSCI 官方报告为准。</li><li>对标企业仅比较公开披露的财务与评级信息，未获取其范围一/二排放明细，排放强度对比暂不成立。</li></ul>
+<h2 id="附录-b-台账与门禁">附录 B：台账与门禁</h2>
+<ul><li>台账：<code>data/armB/sources_B.json</code>；事实卡：<code>data/armB/factcards_B.csv</code>；可读版：<code>data/armB/ledger_B.md</code></li><li>门禁：<code>esg_source_pipeline.py check --ledger data/armB/sources_B.json --report &lt;本文件&gt;</code></li><li>剔除记录：无日期 16 条、T4 自媒体/聚合 40 条、超背景窗 76 条、晚于期末 2 条、无机构 3 条</li></ul>
+<footer class="doc-foot">本文件由 esg-monthly-report 技能生成 · B_有script_中国神华_ESG月报_2026-11.md</footer>
+</div></body></html>

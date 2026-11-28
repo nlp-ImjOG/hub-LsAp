@@ -1,0 +1,73 @@
+{
+  "_comment": "六方向检索矩阵。plan 子命令据此生成确定性检索计划；改检索式只改这个文件，不动代码。占位符 {company}/{short}/{code}/{peers} 由 profile 注入。",
+  "channels": {
+    "gov": {"tiers": ["zhengcelibrary_gw", "zhengcelibrary_bm"], "pages": 1},
+    "mee": {"lists": ["https://www.mee.gov.cn/zcwj/"], "pages": 1},
+    "cninfo": {"columns": ["sse", "szse"], "pages": 1},
+    "web": {"engine": "bing_rss", "pages": 1}
+  },
+  "directions": {
+    "policy_domestic": {
+      "label": "国内政策与标准",
+      "tier": "T1",
+      "channels": ["gov", "mee"],
+      "queries": [
+        "碳排放 配额 分配 方案",
+        "企业环境信息 依法披露",
+        "可持续披露 准则 征求意见",
+        "气候 披露 准则 行业应用指南",
+        "碳足迹 标识 认证",
+        "煤电 低碳化 改造",
+        "节能降碳 行动方案",
+        "碳市场 扩围 钢铁 水泥 电解铝"
+      ]
+    },
+    "policy_intl": {
+      "label": "国际规则与标准",
+      "tier": "T1",
+      "channels": ["web"],
+      "queries": [
+        "ISSB IFRS S2 征求意见",
+        "CSRD ESRS 简化 修订",
+        "CBAM 默认值 清缴 中国",
+        "SBTi 净零 标准 更新",
+        "ISO 甲烷 监测 标准 立项"
+      ]
+    },
+    "rating": {
+      "label": "评级与指数",
+      "tier": "T2",
+      "channels": ["web"],
+      "queries": [
+        "MSCI ESG 评级 上调 下调",
+        "标普 CSA 评分 企业",
+        "CDP 评级 A 名单",
+        "中证 ESG 评价方法 版本",
+        "华证 ESG 评级 结果"
+      ]
+    },
+    "industry": {
+      "label": "行业层面",
+      "tier": "T2",
+      "channels": ["web"],
+      "queries": [
+        "煤炭 行业 十五五 规划",
+        "煤炭 甲烷 控排 试点",
+        "CCUS 示范 项目 投产",
+        "煤化工 能耗 双控 政策"
+      ]
+    },
+    "client": {
+      "label": "客户公司",
+      "tier": "T1",
+      "channels": ["cninfo"],
+      "queries": ["{short}"]
+    },
+    "peer": {
+      "label": "对标企业",
+      "tier": "T1",
+      "channels": ["cninfo"],
+      "queries": ["{peers}"]
+    }
+  }
+}
