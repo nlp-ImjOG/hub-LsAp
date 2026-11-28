@@ -1,0 +1,13 @@
+# ESG 高代码脚本依赖
+# 搜索(免费免 key,默认后端)
+ddgs>=4.0
+
+# 网页正文抽取(本地)
+trafilatura>=1.12
+
+# LLM 总结(可选;无 key 时降级为本地抽取式摘要)
+# 启用:设置 ESG_LLM_API_KEY(或 ZHIPUAI_API_KEY);默认 base_url 指向智谱 GLM
+openai>=1.40
+
+# 备选搜索后端(可选)
+# requests(已属标准生态);切换 Tavily 时设置 TAVILY_API_KEY 与 ESG_SEARCH_BACKEND=tavily
