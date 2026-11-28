@@ -1,0 +1,286 @@
+{
+  "evidence": {
+    "company": "Apple Inc.",
+    "cik": 320193,
+    "search_index": "https://data.sec.gov/submissions/CIK0000320193.json",
+    "candidate_10k_period_ends": [
+      "2026-09-26",
+      "2025-09-27",
+      "2024-09-28",
+      "2023-09-30",
+      "2022-09-24",
+      "2021-09-25",
+      "2020-09-26",
+      "2019-09-28",
+      "2018-09-29",
+      "2017-09-30",
+      "2016-09-24",
+      "2015-09-26"
+    ],
+    "filing": {
+      "reportDate": "2025-09-27",
+      "filingDate": "2025-10-31",
+      "accessionNumber": "0000320193-25-000079",
+      "primaryDocument": "aapl-20250927.htm"
+    },
+    "document": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+    "facts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+    "periods": [
+      [
+        "2024-09-29",
+        "2025-09-27"
+      ],
+      [
+        "2023-10-01",
+        "2024-09-28"
+      ]
+    ],
+    "retrieved_utc": "2026-11-26T09:18:08.263600+00:00",
+    "items": {
+      "revenue": {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "period_type": "duration",
+        "usd": [
+          416161000000,
+          391035000000
+        ]
+      },
+      "gross_profit": {
+        "tag": "GrossProfit",
+        "period_type": "duration",
+        "usd": [
+          195201000000,
+          180683000000
+        ]
+      },
+      "operating_income": {
+        "tag": "OperatingIncomeLoss",
+        "period_type": "duration",
+        "usd": [
+          133050000000,
+          123216000000
+        ]
+      },
+      "net_income": {
+        "tag": "NetIncomeLoss",
+        "period_type": "duration",
+        "usd": [
+          112010000000,
+          93736000000
+        ]
+      },
+      "tax_expense": {
+        "tag": "IncomeTaxExpenseBenefit",
+        "period_type": "duration",
+        "usd": [
+          20719000000,
+          29749000000
+        ]
+      },
+      "operating_cash_flow": {
+        "tag": "NetCashProvidedByUsedInOperatingActivities",
+        "period_type": "duration",
+        "usd": [
+          111482000000,
+          118254000000
+        ]
+      },
+      "investing_cash_flow": {
+        "tag": "NetCashProvidedByUsedInInvestingActivities",
+        "period_type": "duration",
+        "usd": [
+          15195000000,
+          2935000000
+        ]
+      },
+      "financing_cash_flow": {
+        "tag": "NetCashProvidedByUsedInFinancingActivities",
+        "period_type": "duration",
+        "usd": [
+          -120686000000,
+          -121983000000
+        ]
+      },
+      "capex": {
+        "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "period_type": "duration",
+        "usd": [
+          12715000000,
+          9447000000
+        ]
+      },
+      "assets": {
+        "tag": "Assets",
+        "period_type": "instant",
+        "usd": [
+          359241000000,
+          364980000000
+        ]
+      },
+      "liabilities": {
+        "tag": "Liabilities",
+        "period_type": "instant",
+        "usd": [
+          285508000000,
+          308030000000
+        ]
+      },
+      "equity": {
+        "tag": "StockholdersEquity",
+        "period_type": "instant",
+        "usd": [
+          73733000000,
+          56950000000
+        ]
+      },
+      "current_assets": {
+        "tag": "AssetsCurrent",
+        "period_type": "instant",
+        "usd": [
+          147957000000,
+          152987000000
+        ]
+      },
+      "current_liabilities": {
+        "tag": "LiabilitiesCurrent",
+        "period_type": "instant",
+        "usd": [
+          165631000000,
+          176392000000
+        ]
+      },
+      "cash": {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "period_type": "instant",
+        "usd": [
+          35934000000,
+          29943000000
+        ]
+      },
+      "income_taxes_paid": {
+        "tag": "IncomeTaxesPaidNet",
+        "period_type": "duration",
+        "usd": [
+          43369000000,
+          26102000000
+        ]
+      },
+      "dividends_paid": {
+        "tag": "PaymentsOfDividends",
+        "period_type": "duration",
+        "usd": [
+          15421000000,
+          15234000000
+        ]
+      },
+      "repurchases": {
+        "tag": "PaymentsForRepurchaseOfCommonStock",
+        "period_type": "duration",
+        "usd": [
+          90711000000,
+          94949000000
+        ]
+      },
+      "other_operating_liabilities_increase": {
+        "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+        "period_type": "duration",
+        "usd": [
+          -11076000000,
+          15552000000
+        ]
+      },
+      "receivables_increase": {
+        "tag": "IncreaseDecreaseInAccountsReceivable",
+        "period_type": "duration",
+        "usd": [
+          6682000000,
+          3788000000
+        ]
+      },
+      "payables_increase": {
+        "tag": "IncreaseDecreaseInAccountsPayable",
+        "period_type": "duration",
+        "usd": [
+          902000000,
+          6020000000
+        ]
+      }
+    },
+    "optional_unavailable": []
+  },
+  "summary": {
+    "annual_reports": [
+      {
+        "end": "2025-09-27",
+        "stmt_usd_million": {
+          "revenue": 416161.0,
+          "gross_profit": 195201.0,
+          "operating_income": 133050.0,
+          "net_income": 112010.0,
+          "tax_expense": 20719.0,
+          "operating_cash_flow": 111482.0,
+          "investing_cash_flow": 15195.0,
+          "financing_cash_flow": -120686.0,
+          "capex": 12715.0,
+          "assets": 359241.0,
+          "liabilities": 285508.0,
+          "equity": 73733.0,
+          "current_assets": 147957.0,
+          "current_liabilities": 165631.0,
+          "cash": 35934.0,
+          "income_taxes_paid": 43369.0,
+          "dividends_paid": 15421.0,
+          "repurchases": 90711.0,
+          "other_operating_liabilities_increase": -11076.0,
+          "receivables_increase": 6682.0,
+          "payables_increase": 902.0
+        },
+        "gross_margin": 0.469052,
+        "operating_margin": 0.319708,
+        "current_ratio": 0.893293,
+        "cash_to_earnings": 0.995286,
+        "free_cash_flow_million": 98767.0,
+        "balance_sheet_gap_usd": 0
+      },
+      {
+        "end": "2024-09-28",
+        "stmt_usd_million": {
+          "revenue": 391035.0,
+          "gross_profit": 180683.0,
+          "operating_income": 123216.0,
+          "net_income": 93736.0,
+          "tax_expense": 29749.0,
+          "operating_cash_flow": 118254.0,
+          "investing_cash_flow": 2935.0,
+          "financing_cash_flow": -121983.0,
+          "capex": 9447.0,
+          "assets": 364980.0,
+          "liabilities": 308030.0,
+          "equity": 56950.0,
+          "current_assets": 152987.0,
+          "current_liabilities": 176392.0,
+          "cash": 29943.0,
+          "income_taxes_paid": 26102.0,
+          "dividends_paid": 15234.0,
+          "repurchases": 94949.0,
+          "other_operating_liabilities_increase": 15552.0,
+          "receivables_increase": 3788.0,
+          "payables_increase": 6020.0
+        },
+        "gross_margin": 0.462063,
+        "operating_margin": 0.315102,
+        "current_ratio": 0.867313,
+        "cash_to_earnings": 1.261564,
+        "free_cash_flow_million": 108807.0,
+        "balance_sheet_gap_usd": 0
+      }
+    ],
+    "changes_usd_million": {
+      "net_income": 18274.0,
+      "operating_cash_flow": -6772.0,
+      "capex": 3268.0,
+      "free_cash_flow": -10040.0
+    },
+    "cash_and_profit_direction": "opposite"
+  }
+}

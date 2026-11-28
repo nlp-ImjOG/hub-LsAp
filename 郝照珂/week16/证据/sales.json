@@ -1,0 +1,169 @@
+{
+  "evidence": {
+    "company": "Apple Inc.",
+    "year": 2025,
+    "column_order": [
+      2025,
+      2024
+    ],
+    "unit": "USD million",
+    "search": [
+      {
+        "archive": "https://www.apple.com/newsroom/archive/2025/10/",
+        "links_seen": 89,
+        "matching_releases": [
+          "https://www.apple.com/newsroom/2025/10/apple-reports-fourth-quarter-results/"
+        ]
+      }
+    ],
+    "release": "https://www.apple.com/newsroom/2025/10/apple-reports-fourth-quarter-results/",
+    "document": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf",
+    "locator": "page 1, Twelve Months Ended, Net sales by reportable segment / by category",
+    "retrieved_utc": "2026-11-26T09:18:08.363304+00:00",
+    "sha256_pdf": "43e7f0730b3cce0fc37301a2f43c29712bbde6ab299d97c6df345fd0c754508a",
+    "tables": {
+      "geography": {
+        "Americas": [
+          178353,
+          167045
+        ],
+        "Europe": [
+          111032,
+          101328
+        ],
+        "Greater China": [
+          64377,
+          66952
+        ],
+        "Japan": [
+          28703,
+          25052
+        ],
+        "Rest of Asia Pacific": [
+          33696,
+          30658
+        ],
+        "Total net sales": [
+          416161,
+          391035
+        ]
+      },
+      "category": {
+        "iPhone": [
+          209586,
+          201183
+        ],
+        "Mac": [
+          33708,
+          29984
+        ],
+        "iPad": [
+          28023,
+          26694
+        ],
+        "Wearables, Home and Accessories": [
+          35686,
+          37005
+        ],
+        "Services": [
+          109158,
+          96169
+        ],
+        "Total net sales": [
+          416161,
+          391035
+        ]
+      }
+    }
+  },
+  "summary": {
+    "net_change": 25126,
+    "growth_pct": 6.4255,
+    "views": {
+      "geography": {
+        "rows": {
+          "Americas": {
+            "change": 11308,
+            "yoy_pct": 6.7694,
+            "share_pct": 42.8567,
+            "contribution_pct": 45.0052
+          },
+          "Europe": {
+            "change": 9704,
+            "yoy_pct": 9.5768,
+            "share_pct": 26.6801,
+            "contribution_pct": 38.6213
+          },
+          "Greater China": {
+            "change": -2575,
+            "yoy_pct": -3.846,
+            "share_pct": 15.4693,
+            "contribution_pct": -10.2483
+          },
+          "Japan": {
+            "change": 3651,
+            "yoy_pct": 14.5737,
+            "share_pct": 6.8971,
+            "contribution_pct": 14.5308
+          },
+          "Rest of Asia Pacific": {
+            "change": 3038,
+            "yoy_pct": 9.9093,
+            "share_pct": 8.0969,
+            "contribution_pct": 12.0911
+          }
+        },
+        "largest_increase": "Americas",
+        "declines": [
+          "Greater China"
+        ],
+        "reconciliation_difference": [
+          0,
+          0
+        ]
+      },
+      "category": {
+        "rows": {
+          "iPhone": {
+            "change": 8403,
+            "yoy_pct": 4.1768,
+            "share_pct": 50.3618,
+            "contribution_pct": 33.4434
+          },
+          "Mac": {
+            "change": 3724,
+            "yoy_pct": 12.42,
+            "share_pct": 8.0997,
+            "contribution_pct": 14.8213
+          },
+          "iPad": {
+            "change": 1329,
+            "yoy_pct": 4.9786,
+            "share_pct": 6.7337,
+            "contribution_pct": 5.2893
+          },
+          "Wearables, Home and Accessories": {
+            "change": -1319,
+            "yoy_pct": -3.5644,
+            "share_pct": 8.575,
+            "contribution_pct": -5.2495
+          },
+          "Services": {
+            "change": 12989,
+            "yoy_pct": 13.5064,
+            "share_pct": 26.2298,
+            "contribution_pct": 51.6955
+          }
+        },
+        "largest_increase": "Services",
+        "declines": [
+          "Wearables, Home and Accessories"
+        ],
+        "reconciliation_difference": [
+          0,
+          0
+        ]
+      }
+    }
+  }
+}
