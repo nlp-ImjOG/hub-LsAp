@@ -1,0 +1,12 @@
+{
+  "mode": "monthly",
+  "client": "中国神华",
+  "industry": "煤炭/传统能源",
+  "industry_source": "builtin",
+  "today": "2026-11-24",
+  "start_date": "2026-10-25",
+  "end_date": "2026-11-24",
+  "period_label": "2026年11月刊",
+  "window": "2026-10-25:2026-11-24",
+  "hints": []
+}

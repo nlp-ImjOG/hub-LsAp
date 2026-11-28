@@ -1,0 +1,179 @@
+{
+  "input": "/Users/lixiaonan47/Desktop/9-code/py312/第16周_Agent应用部署_Skills和OpenClaw/homework_package/homework1/part2/tests/demo_output/mock_bids.jsonl",
+  "window": {
+    "start": null,
+    "end": null
+  },
+  "total": 8,
+  "malformed_lines": [
+    9
+  ],
+  "stage": {
+    "中标公告": 6,
+    "招标公告": 2
+  },
+  "theme_counts": {
+    "双碳": 3,
+    "可持续咨询": 2,
+    "清洁能源": 2,
+    "绿色环保": 1,
+    "绿色金融": 1
+  },
+  "industry_type": {
+    "咨询服务": 3,
+    "工程建设": 2,
+    "运营服务": 1,
+    "设备采购": 1,
+    "认证核查": 1
+  },
+  "buyer_type": {
+    "政府机关": 2,
+    "国企": 2,
+    "上市公司": 2,
+    "高校": 1,
+    "事业单位": 1
+  },
+  "region_top10": [
+    {
+      "region": "测试省某市",
+      "count": 2
+    },
+    {
+      "region": "广东(测试)",
+      "count": 1
+    },
+    {
+      "region": "北京(测试)",
+      "count": 1
+    },
+    {
+      "region": "江苏(测试)",
+      "count": 1
+    },
+    {
+      "region": "上海(测试)",
+      "count": 1
+    },
+    {
+      "region": "测试省乙市",
+      "count": 1
+    },
+    {
+      "region": "测试省",
+      "count": 1
+    }
+  ],
+  "monthly": [
+    {
+      "month": "2024-11",
+      "count": 1,
+      "amount_wan": 300.0
+    },
+    {
+      "month": "2025-03",
+      "count": 1,
+      "amount_wan": 3500.0
+    },
+    {
+      "month": "2026-09",
+      "count": 1,
+      "amount_wan": 128.5
+    },
+    {
+      "month": "2026-10",
+      "count": 3,
+      "amount_wan": 12530.0
+    },
+    {
+      "month": "2026-11",
+      "count": 2,
+      "amount_wan": 800.0
+    }
+  ],
+  "amount": {
+    "with_amount": 7,
+    "missing": 1,
+    "missing_rate": 0.125,
+    "buckets": {
+      "<50万": 0,
+      "50-100万": 1,
+      "100-500万": 3,
+      "500-1000万": 1,
+      "1000-5000万": 1,
+      "5000万-1亿": 0,
+      "≥1亿": 1
+    },
+    "total_wan": 17258.5,
+    "mean_wan": 2465.5,
+    "median_wan": 450.0,
+    "min_wan": 80.0,
+    "max_wan": 12000.0
+  },
+  "top_winners": [
+    {
+      "winner": "测试环科院A",
+      "count": 2,
+      "amount_wan_sum": 428.5
+    },
+    {
+      "winner": "测试运维B",
+      "count": 1,
+      "amount_wan_sum": 12000.0
+    },
+    {
+      "winner": "测试咨询C",
+      "count": 1,
+      "amount_wan_sum": 80.0
+    },
+    {
+      "winner": "测试建设D",
+      "count": 1,
+      "amount_wan_sum": 3500.0
+    },
+    {
+      "winner": "测试证券E",
+      "count": 1,
+      "amount_wan_sum": 0.0
+    }
+  ],
+  "top_buyers": [
+    {
+      "buyer": "某市生态环境局",
+      "count": 1
+    },
+    {
+      "buyer": "某市发改委",
+      "count": 1
+    },
+    {
+      "buyer": "某能源集团",
+      "count": 1
+    },
+    {
+      "buyer": "某上市公司",
+      "count": 1
+    },
+    {
+      "buyer": "某水务集团",
+      "count": 1
+    },
+    {
+      "buyer": "某商业银行",
+      "count": 1
+    },
+    {
+      "buyer": "某高校",
+      "count": 1
+    },
+    {
+      "buyer": "某省生态环境厅",
+      "count": 1
+    }
+  ],
+  "sources": {
+    "中国政府采购网": 3,
+    "某省公共资源交易中心": 3,
+    "千里马": 1,
+    "采招网": 1
+  }
+}
