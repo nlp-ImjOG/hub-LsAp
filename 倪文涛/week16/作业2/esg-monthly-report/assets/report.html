@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${title}</title>
+<style>
+:root { color-scheme: light; --ink:#16332d; --green:#17624e; --muted:#54655f; }
+* { box-sizing:border-box; }
+body { margin:0; background:#edf2ee; color:var(--ink); font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; }
+main { max-width:1000px; margin:40px auto; padding:52px 60px; background:#fff; border-top:8px solid var(--green); }
+.eyebrow { font-size:12px; font-weight:700; letter-spacing:.15em; color:var(--green); }
+h1 { font-size:30px; line-height:1.45; margin:14px 0 30px; overflow-wrap:anywhere; }
+h2 { font-size:22px; border-bottom:1px solid #dce6df; padding-bottom:10px; margin-top:38px; }
+h3 { font-size:18px; margin-top:24px; }
+p { margin:12px 0; overflow-wrap:anywhere; }
+a { color:var(--green); text-underline-offset:3px; overflow-wrap:anywhere; }
+table { width:100%; border-collapse:collapse; margin:20px 0; font-size:13px; table-layout:fixed; }
+th,td { border:1px solid #dce6df; padding:10px; text-align:left; vertical-align:top; overflow-wrap:anywhere; }
+th { background:#eff6f1; }
+footer { margin-top:40px; padding-top:16px; border-top:1px solid #dce6df; color:var(--muted); font-size:12px; }
+@media (max-width:700px) { main { margin:0; padding:24px 18px; } h1 { font-size:24px; } th,td { padding:6px; } }
+@media print { @page { size:A4; margin:18mm; } body { background:white; font-size:10pt; } main { max-width:none; margin:0; padding:0; border-top-width:4px; } h1 { font-size:22pt; } h2 { font-size:15pt; } h3 { font-size:12pt; } h2,h3 { break-after:avoid; } tr { break-inside:avoid; } thead { display:table-header-group; } a { color:inherit; } }
+</style>
+</head>
+<body><main>
+<div class="eyebrow">ESG MONTHLY INTELLIGENCE</div>
+<h1>${title}</h1>
+${body}
+<footer>事实、分析与建议分列；来源及研究范围见正文与附件。</footer>
+</main></body>
+</html>
