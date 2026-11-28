@@ -1,0 +1,13 @@
+{
+  "company": "中国神华能源股份有限公司",
+  "month": "2026-10",
+  "cutoff": "2026-11-25",
+  "per_query": 4,
+  "queries": [
+    "中国神华 2026年10月 安全 处罚 site:ordos.gov.cn",
+    "中国神华 2026年10月 董事会 公告",
+    "2026年10月 碳排放 标准 site:mee.gov.cn",
+    "中国中煤 2026年10月 源网荷储"
+  ],
+  "search_provider": "codex"
+}

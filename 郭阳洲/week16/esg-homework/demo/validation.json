@@ -1,0 +1,23 @@
+{
+  "result": "passed",
+  "checks": [
+    "two skill validators passed with Python UTF-8 mode",
+    "history 16 lots / 5 projects / CNY 44646200",
+    "Jiangsu 11 lots reconcile to CNY 38979000",
+    "exact duplicate does not increase totals",
+    "conflicting duplicate rejected",
+    "empty sample handled",
+    "currency and unit conversion",
+    "daily initial 2 records, repeat 0",
+    "future file acquisition start identified",
+    "cancellation and old publication with new correction detected",
+    "report HTML parsed; local guide links resolved",
+    "monthly report visually inspected using Edge screenshot"
+  ],
+  "limitations": [
+    "tender data are a selected sample",
+    "some original pages returned 403 or timeout; publisher-domain index text used",
+    "daily is a historical replay with no complete historical amendment snapshot",
+    "no external delivery or schedule configured for demonstration"
+  ]
+}

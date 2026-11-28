@@ -1,0 +1,110 @@
+{
+  "searched_at": "2026-11-25",
+  "scope": "课堂演示的定向检索；以下为实际查询与结果摘要，覆盖不代表全国穷尽",
+  "queries": [
+    {
+      "query": "中国神华 2026年10月 ESG 安全 环保 绿色",
+      "result": "识别公司公告、既往ESG报告与运营信息"
+    },
+    {
+      "query": "中国神华 2026年10月 事故 处罚 安全 环保",
+      "result": "发现上湾与金烽寸草塔10月处罚公示；已打开监管原文"
+    },
+    {
+      "query": "中国神华 2026年10月 MSCI ESG 评级",
+      "result": "有旧评级与11月动态，未确认10月可比变化"
+    },
+    {
+      "query": "site:mee.gov.cn 2026 10 碳排放 核算",
+      "result": "发现碳市场通知、修订条例文本、发布会与核算技术更新"
+    },
+    {
+      "query": "site:mee.gov.cn 2026年10月 标准 碳排放",
+      "result": "核对月内动态与存量文件时点"
+    },
+    {
+      "query": "site:chinacoal.com 2026 10 21 源网荷储 上海能源",
+      "result": "发现集团官网10月开放日消息，直读超时，采用同域索引正文"
+    },
+    {
+      "query": "site:ccgp.gov.cn \"ESG\" \"中标\" \"2025\"",
+      "result": "发现华东师大ESG咨询成交"
+    },
+    {
+      "query": "site:ccgp.gov.cn \"ESG\" \"成交公告\"",
+      "result": "发现ESG编号误匹配，排除档案设备采购"
+    },
+    {
+      "query": "site:ccgp.gov.cn \"碳排放\" \"中标公告\" \"2025年\"",
+      "result": "取得监测设备和能力建设线索，本次采用服务采购主口径"
+    },
+    {
+      "query": "site:ccgp.gov.cn \"碳排放\" \"中标公告\" \"2026年\"",
+      "result": "发现江苏核查及其他碳交易、设备线索"
+    },
+    {
+      "query": "site:ccgp.gov.cn/cggg \"碳达峰\" \"2025\" \"成交金额\"",
+      "result": "取得南平碳达峰路径研究结果"
+    },
+    {
+      "query": "site:ccgp.gov.cn/cggg \"碳排放核查\" \"2025\" \"中标\"",
+      "result": "进一步找到江苏多标包与内蒙古结果"
+    },
+    {
+      "query": "\"2025-2027年度碳排放核查\" \"采购包5\" \"元\" \"采购包6\"",
+      "result": "补齐江苏5至8包；与已检出1至4、9至11包合并核验"
+    },
+    {
+      "query": "\"碳达峰\" \"中标\" \"2024-12\" site:gov.cn",
+      "result": "发现龙华节能减排结果并打开原文；其他线索未全部入选"
+    },
+    {
+      "query": "site:ccgp.gov.cn \"碳\" \"招标公告\" \"2026年11月\"",
+      "result": "发现福建、兰州等招标和大量设备误匹配"
+    },
+    {
+      "query": "site:ccgp.gov.cn/cggg \"碳\" \"2026年11月24日\" 招标",
+      "result": "返回很多截止日期匹配；核对发布日期后未当作11月24日新增"
+    },
+    {
+      "query": "site:ccgp.gov.cn \"碳\" \"中标\" \"2024\" \"12\"",
+      "result": "多数结果为履约期匹配，继续用日期与原站补搜"
+    }
+  ],
+  "access_limits": [
+    {
+      "url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202602/t20260205_26153076.htm",
+      "result": "直读403，检索同域索引正文并分包交叉补齐"
+    },
+    {
+      "url": "https://www.ccgp.gov.cn/cggg/zygg/zbgg/202505/t20250512_24576000.htm",
+      "result": "直读403，检索同域完整索引正文"
+    },
+    {
+      "url": "https://zm68.chinacoal.com/col/col7641/art/2026/art_68b30ecda075167466bb75d3cebd15b8.html",
+      "result": "直读超时，取得官网索引正文"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "中国第二历史档案馆档案修复设备采购",
+      "url": "https://www.ccgp.gov.cn/cggg/zygg/cjgg/202610/t20261030_27588262.htm",
+      "reason": "ESG出现在编号，采购内容无实质相关性"
+    },
+    {
+      "title": "同济大学碳排放连续在线监测系统",
+      "url": "https://www.ccgp.gov.cn/cggg/zygg/zbgg/202512/t20251201_25815710.htm",
+      "reason": "属于监测设备，本次服务主口径未纳入"
+    },
+    {
+      "title": "北京理工大学能耗指标和减排采购",
+      "url": "https://www.ccgp.gov.cn/cggg/zygg/zbgg/202611/t20261106_27634105.htm",
+      "reason": "包含碳配额采购，与服务采购金额可比性有限，未纳入本次统计"
+    },
+    {
+      "title": "河北碳市场建设9、10、11、13标段",
+      "url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202405/t20240515_22119091.htm",
+      "reason": "2024年5月发布，超出24个月窗口"
+    }
+  ]
+}

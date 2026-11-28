@@ -1,0 +1,19 @@
+{
+  "backend": "codex-cli",
+  "web_search": false,
+  "success": true,
+  "model": "CLI/server default; not exposed by this adapter",
+  "usage": {
+    "input_tokens": 37632,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 3596,
+    "reasoning_output_tokens": 0
+  },
+  "exit_code": 0,
+  "tool_types": [
+    "error",
+    "agent_message"
+  ],
+  "elapsed_seconds": 192.453
+}

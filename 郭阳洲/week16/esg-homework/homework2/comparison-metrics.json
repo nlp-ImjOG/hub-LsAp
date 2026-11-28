@@ -1,0 +1,381 @@
+{
+  "experiment": {
+    "registered_on": "2026-11-26",
+    "business_rules_version": "esg-research-1.0",
+    "primary_task": "中国神华2026年10月ESG月报",
+    "information_cutoff": "2026-11-25",
+    "experiments": {
+      "live": "A uses native model web tools; B uses program queries through native model search then program fetch/clean plus model summary",
+      "fixed": "exact same original corpus bytes delivered to each variant; B cleans before model call; A performs decisions itself",
+      "repeat_count_fixed": 2,
+      "repeat_count_live": 1
+    },
+    "fixed_corpus_sha256": "64e373715471875da6f654374e521e7682f96d9a11d5baf2727d25750654de21",
+    "fixed_corpus_note": "6 primary-publication HTML documents plus 1 duplicate tracking URL; selected before formal model runs; no expected answers injected into model prompts",
+    "fairness_limits": [
+      "live search paths and tool availability differ by design",
+      "fixed corpus assesses content handling, not nationwide search recall",
+      "common renderer is applied after both outputs for display and excluded from no-script business treatment",
+      "CLI default model identifier not exposed; same executable and command settings for all model calls",
+      "no paid API price or independent human panel available",
+      "model synthesis remains nondeterministic"
+    ],
+    "evaluation": [
+      "source id validity and evidence traceability",
+      "known duplicate treatment",
+      "factual audit of 2 penalty amounts, responsible-person amount and 3-day rectification period",
+      "governance acquisition decision stage and October republication versus August revision",
+      "scope/ratings/remediation gaps disclosure",
+      "actual wall time and CLI usage where available"
+    ],
+    "files_sha256": {
+      "esg-homework/homework2/task.json": "b889ea2e253a11dee7c4cdfc1987ee7856c5d934c304af1205949413d3b825ce",
+      "esg-homework/homework2/benchmark.py": "9faa8b394f10c03cae8dc79051a8fa02430b6dd03fc823b045308d8a76db4f96",
+      "esg-homework/homework2/variants/A/esg-monthly-no-scripts/SKILL.md": "fd37b08b2c4ef07ca78540e26e607cf3ecb0a91ff3aaf7295df039aa0fbeebe8",
+      "esg-homework/homework2/variants/A/esg-monthly-no-scripts/references/business-rules.md": "f434ac5de500dfb97c6e0831f1c9c1979ec781a851a590304ba014c613e980bc",
+      "esg-homework/homework2/variants/A/esg-monthly-no-scripts/references/research.md": "d9de113a6f573c478d5f0edac194c168b1bb9d78b012945bacbd4f22f51f963e",
+      "esg-homework/homework2/variants/B/esg-monthly-scripted/SKILL.md": "9b252e997f0f5927194eb4229dbee4765aa0cf20aa087eac7881d27bf8c2b237",
+      "esg-homework/homework2/variants/B/esg-monthly-scripted/references/business-rules.md": "f434ac5de500dfb97c6e0831f1c9c1979ec781a851a590304ba014c613e980bc",
+      "esg-homework/homework2/variants/B/esg-monthly-scripted/references/research.md": "d9de113a6f573c478d5f0edac194c168b1bb9d78b012945bacbd4f22f51f963e",
+      "esg-homework/homework2/variants/B/esg-monthly-scripted/scripts/model_client.py": "a8d821c0e323edad072824168ae51164c0b4fb52553f7892f2dc44308c361aa9",
+      "esg-homework/homework2/variants/B/esg-monthly-scripted/scripts/render_report.py": "54fcdbcb6df82cff65bd281ae0b1e5c1d09dce59fb33925f2c7e3e502a40b633",
+      "esg-homework/homework2/variants/B/esg-monthly-scripted/scripts/research.py": "446fdc91af90bb203fd55f9f7caeb5c68a8bf37d7f5cdd046d48b1be5cb907af"
+    },
+    "audit_criteria_sha256": "c2b0f39061e50d38968a5a899d4385f068862b0920f981e91ea73ac7f5a5df32",
+    "evaluation_note": "A_live结果已单独检视；固定材料事实核对项在检视该输出前登记，固定材料评价依据audit-criteria.json。",
+    "live_trial_note": "联网A1与B1为探索性试跑，B1保留首次校验失败及复用模型输出的恢复记录；正式内容处理对照采用下面重新冻结的代码。",
+    "amendments": [
+      {
+        "reason": "联网B试跑复现：已知待核验来源被误判未知ID；修复允许pending来源但禁止将未读来源确认为included",
+        "before_fixed_runs": true,
+        "old_files_sha256": {
+          "esg-homework/homework2/task.json": "b889ea2e253a11dee7c4cdfc1987ee7856c5d934c304af1205949413d3b825ce",
+          "esg-homework/homework2/benchmark.py": "9faa8b394f10c03cae8dc79051a8fa02430b6dd03fc823b045308d8a76db4f96",
+          "esg-homework/homework2/variants/A/esg-monthly-no-scripts/SKILL.md": "fd37b08b2c4ef07ca78540e26e607cf3ecb0a91ff3aaf7295df039aa0fbeebe8",
+          "esg-homework/homework2/variants/A/esg-monthly-no-scripts/references/business-rules.md": "f434ac5de500dfb97c6e0831f1c9c1979ec781a851a590304ba014c613e980bc",
+          "esg-homework/homework2/variants/A/esg-monthly-no-scripts/references/research.md": "d9de113a6f573c478d5f0edac194c168b1bb9d78b012945bacbd4f22f51f963e",
+          "esg-homework/homework2/variants/B/esg-monthly-scripted/SKILL.md": "bda7ca5d9d3dd89c982742bc0d51089665f5beef67650c6a4e89f40c0dbf7d60",
+          "esg-homework/homework2/variants/B/esg-monthly-scripted/references/business-rules.md": "f434ac5de500dfb97c6e0831f1c9c1979ec781a851a590304ba014c613e980bc",
+          "esg-homework/homework2/variants/B/esg-monthly-scripted/references/research.md": "d9de113a6f573c478d5f0edac194c168b1bb9d78b012945bacbd4f22f51f963e",
+          "esg-homework/homework2/variants/B/esg-monthly-scripted/scripts/model_client.py": "a8d821c0e323edad072824168ae51164c0b4fb52553f7892f2dc44308c361aa9",
+          "esg-homework/homework2/variants/B/esg-monthly-scripted/scripts/render_report.py": "54fcdbcb6df82cff65bd281ae0b1e5c1d09dce59fb33925f2c7e3e502a40b633",
+          "esg-homework/homework2/variants/B/esg-monthly-scripted/scripts/research.py": "204f842538326145f6f16ca395ab5264f344f006fecd79296e7dc26766e41648"
+        }
+      },
+      {
+        "reason": "固定B1复现已知重复来源的合法outside记录被误拒；只调整后验校验和展示，不修改已保存模型响应和摘要提示",
+        "affected_run": "fixed/B-1",
+        "model_outputs_unchanged": true,
+        "old_files_sha256": {
+          "esg-homework/homework2/task.json": "b889ea2e253a11dee7c4cdfc1987ee7856c5d934c304af1205949413d3b825ce",
+          "esg-homework/homework2/benchmark.py": "9faa8b394f10c03cae8dc79051a8fa02430b6dd03fc823b045308d8a76db4f96",
+          "esg-homework/homework2/variants/A/esg-monthly-no-scripts/SKILL.md": "fd37b08b2c4ef07ca78540e26e607cf3ecb0a91ff3aaf7295df039aa0fbeebe8",
+          "esg-homework/homework2/variants/A/esg-monthly-no-scripts/references/business-rules.md": "f434ac5de500dfb97c6e0831f1c9c1979ec781a851a590304ba014c613e980bc",
+          "esg-homework/homework2/variants/A/esg-monthly-no-scripts/references/research.md": "d9de113a6f573c478d5f0edac194c168b1bb9d78b012945bacbd4f22f51f963e",
+          "esg-homework/homework2/variants/B/esg-monthly-scripted/SKILL.md": "9b252e997f0f5927194eb4229dbee4765aa0cf20aa087eac7881d27bf8c2b237",
+          "esg-homework/homework2/variants/B/esg-monthly-scripted/references/business-rules.md": "f434ac5de500dfb97c6e0831f1c9c1979ec781a851a590304ba014c613e980bc",
+          "esg-homework/homework2/variants/B/esg-monthly-scripted/references/research.md": "d9de113a6f573c478d5f0edac194c168b1bb9d78b012945bacbd4f22f51f963e",
+          "esg-homework/homework2/variants/B/esg-monthly-scripted/scripts/model_client.py": "a8d821c0e323edad072824168ae51164c0b4fb52553f7892f2dc44308c361aa9",
+          "esg-homework/homework2/variants/B/esg-monthly-scripted/scripts/render_report.py": "54fcdbcb6df82cff65bd281ae0b1e5c1d09dce59fb33925f2c7e3e502a40b633",
+          "esg-homework/homework2/variants/B/esg-monthly-scripted/scripts/research.py": "aecc31c051fdec9b2e1d00073d68c8bf83640072177fc8af909c81435f7f2139"
+        }
+      }
+    ]
+  },
+  "fixed_runs": [
+    {
+      "run": "A-1",
+      "completed": true,
+      "first_attempt_completed": true,
+      "recovered": false,
+      "elapsed_seconds": 202.234,
+      "input_sha256": "64e373715471875da6f654374e521e7682f96d9a11d5baf2727d25750654de21",
+      "source_count": 7,
+      "item_count": 7,
+      "invalid_ids": [],
+      "tool_calls": 0,
+      "input_tokens": 37632,
+      "cached_input_tokens": 0,
+      "output_tokens": 3463,
+      "duplicate_ids": [],
+      "factual_audit_score": 8,
+      "factual_audit_max": 8
+    },
+    {
+      "run": "B-1",
+      "completed": true,
+      "first_attempt_completed": false,
+      "recovered": true,
+      "elapsed_seconds": 178.375,
+      "input_sha256": "64e373715471875da6f654374e521e7682f96d9a11d5baf2727d25750654de21",
+      "source_count": 6,
+      "item_count": 7,
+      "invalid_ids": [],
+      "tool_calls": 0,
+      "input_tokens": 36994,
+      "cached_input_tokens": 0,
+      "output_tokens": 2806,
+      "duplicate_ids": [
+        "P07"
+      ],
+      "factual_audit_score": 8,
+      "factual_audit_max": 8
+    },
+    {
+      "run": "B-2",
+      "completed": true,
+      "first_attempt_completed": true,
+      "recovered": false,
+      "elapsed_seconds": 181.11,
+      "input_sha256": "64e373715471875da6f654374e521e7682f96d9a11d5baf2727d25750654de21",
+      "source_count": 6,
+      "item_count": 7,
+      "invalid_ids": [],
+      "tool_calls": 0,
+      "input_tokens": 36994,
+      "cached_input_tokens": 0,
+      "output_tokens": 2905,
+      "duplicate_ids": [
+        "P07"
+      ],
+      "factual_audit_score": 8,
+      "factual_audit_max": 8
+    },
+    {
+      "run": "A-2",
+      "completed": true,
+      "first_attempt_completed": true,
+      "recovered": false,
+      "elapsed_seconds": 192.453,
+      "input_sha256": "64e373715471875da6f654374e521e7682f96d9a11d5baf2727d25750654de21",
+      "source_count": 7,
+      "item_count": 7,
+      "invalid_ids": [],
+      "tool_calls": 0,
+      "input_tokens": 37632,
+      "cached_input_tokens": 0,
+      "output_tokens": 3596,
+      "duplicate_ids": [],
+      "factual_audit_score": 8,
+      "factual_audit_max": 8
+    }
+  ],
+  "aggregate": {
+    "A": {
+      "runs": 2,
+      "mean_seconds": 197.34,
+      "mean_input_tokens": 37632,
+      "mean_output_tokens": 3529.5,
+      "mean_audit_score": 8
+    },
+    "B": {
+      "runs": 2,
+      "mean_seconds": 179.74,
+      "mean_input_tokens": 36994,
+      "mean_output_tokens": 2855.5,
+      "mean_audit_score": 8
+    }
+  },
+  "audit": {
+    "reviewer": "本任务研究者逐项对照原文，非独立盲评",
+    "criteria_file": "audit-criteria.json",
+    "runs": {
+      "A-1": {
+        "checks": [
+          {
+            "id": "C01",
+            "score": 1,
+            "evidence": "P01写明企业合计9万元、10月14日决定及10月19日公示。"
+          },
+          {
+            "id": "C02",
+            "score": 1,
+            "evidence": "P02分别列出煤矿180万元与主要负责人12.5万元。"
+          },
+          {
+            "id": "C03",
+            "score": 1,
+            "evidence": "P02列停产整顿3天和暂扣许可证，分析明确整改、证照发还及复产未知。"
+          },
+          {
+            "id": "C04",
+            "score": 1,
+            "evidence": "P03列拟受让50%股权、617673956.93元；披露时协议未完成签署，未声称交割完成。"
+          },
+          {
+            "id": "C05",
+            "score": 1,
+            "evidence": "P05区分2024年公布、2026年8月8日修订和10月10日刊载。"
+          },
+          {
+            "id": "C06",
+            "score": 1,
+            "evidence": "P06归于中国中煤与上海能源，活动10月21日、刊发10月22日，区分历史并网。"
+          },
+          {
+            "id": "C07",
+            "score": 1,
+            "evidence": "摘要与limitations明确缺少可确认的公司当月评级变动证据。"
+          },
+          {
+            "id": "C08",
+            "score": 1,
+            "evidence": "P07标outside，说明跟踪参数与同正文、同文号，避免重复计入事件。"
+          }
+        ]
+      },
+      "B-1": {
+        "checks": [
+          {
+            "id": "C01",
+            "score": 1,
+            "evidence": "P01给出9万元、决定10月14日、公示10月19日。"
+          },
+          {
+            "id": "C02",
+            "score": 1,
+            "evidence": "P02分开给出煤矿175+5=180万元与负责人12.5万元。"
+          },
+          {
+            "id": "C03",
+            "score": 1,
+            "evidence": "P02写停产整顿3天和暂扣许可证，明确复产/验收/返还未知。"
+          },
+          {
+            "id": "C04",
+            "score": 1,
+            "evidence": "P03写拟受让50%、对价617673956.93元、协议尚未完成签署。"
+          },
+          {
+            "id": "C05",
+            "score": 1,
+            "evidence": "P05分别记录2024公布、2026年8月修订、10月页面刊载及未知修订生效日。"
+          },
+          {
+            "id": "C06",
+            "score": 1,
+            "evidence": "P06活动10月21日、刊发10月22日，归于中国中煤/上海能源，历史并网与累计成果分清。"
+          },
+          {
+            "id": "C07",
+            "score": 1,
+            "evidence": "limitations说明缺当月评级变动与方法调整证据。"
+          },
+          {
+            "id": "C08",
+            "score": 1,
+            "evidence": "P07按程序去重元数据标outside，不进入独立事件；模型同时说明无法看到主记录映射。"
+          }
+        ],
+        "pipeline_note": "首次校验因P07元数据角色误拒，修复后复用原模型响应恢复；不改模型内容。"
+      },
+      "B-2": {
+        "checks": [
+          {
+            "id": "C01",
+            "score": 1,
+            "evidence": "P01区分10月14日决定与10月19日公示，企业合计9万元。"
+          },
+          {
+            "id": "C02",
+            "score": 1,
+            "evidence": "P02单列矿方180万元与负责人12.5万元。"
+          },
+          {
+            "id": "C03",
+            "score": 1,
+            "evidence": "P02记录停产整顿3天、暂扣许可证，并将停复产及验收列未知。"
+          },
+          {
+            "id": "C04",
+            "score": 1,
+            "evidence": "P03区分董事会批准和未签协议，50%股权、617673956.93元正确。"
+          },
+          {
+            "id": "C05",
+            "score": 1,
+            "evidence": "P05区分2024公布、生效、2026年8月修订与10月刊载。"
+          },
+          {
+            "id": "C06",
+            "score": 1,
+            "evidence": "P06区分中国中煤/上海能源、10月21日活动与22日发布，注明历史并网和累计口径。"
+          },
+          {
+            "id": "C07",
+            "score": 1,
+            "evidence": "limitations明确无可确认的本月ESG评级行动。"
+          },
+          {
+            "id": "C08",
+            "score": 1,
+            "evidence": "P07保持outside且由程序排除正文，未重复计事件；模型说明缺少主记录映射。"
+          }
+        ],
+        "pipeline_note": "首次完整运行成功，输出与B1在8项核对上保持一致。"
+      },
+      "A-2": {
+        "checks": [
+          {
+            "id": "C01",
+            "score": 1,
+            "evidence": "P01记录10月14日决定、19日11:28公示、三项各3万元合计9万元。"
+          },
+          {
+            "id": "C02",
+            "score": 1,
+            "evidence": "P02单列企业175+5=180万元及个人12.5万元。"
+          },
+          {
+            "id": "C03",
+            "score": 1,
+            "evidence": "P02写停产整顿3天及暂扣许可证，说明复产和证照恢复未知。"
+          },
+          {
+            "id": "C04",
+            "score": 1,
+            "evidence": "P03写拟受让50%、617673956.93元及协议尚未签署，区分其他已完成资产收购。"
+          },
+          {
+            "id": "C05",
+            "score": 1,
+            "evidence": "P05明确2024公布/施行、2026年8月修订、10月转载，具体修订生效日未知。"
+          },
+          {
+            "id": "C06",
+            "score": 1,
+            "evidence": "P06区分21日活动/22日发布、中国中煤/上海能源，2021并网及累计成果保留原时点。"
+          },
+          {
+            "id": "C07",
+            "score": 1,
+            "evidence": "摘要与limitations说明缺少当月评级机构记录。"
+          },
+          {
+            "id": "C08",
+            "score": 1,
+            "evidence": "P07认定与P01同文号、日期和正文摘要值，归入P01证据组并排除。"
+          }
+        ]
+      }
+    },
+    "conclusion": "本次6篇独立原文的固定材料对照中，A、B各两次输出均通过8项预设事实核对。B通过程序减少重复正文输入并固定校验流程，但首次运行暴露的校验缺陷、PDF阅读限制和补搜范围差异表明，脚本效果取决于实现和测试，尚无证据支持整体报告质量必然提高。",
+    "live_findings": [
+      "A版联网试跑首次完成，用时308.735秒，返回12个来源。CLI报告输入286432 tokens、输出6285 tokens，含多轮工具结果；已完成的网页工具调用23次。A自主补搜了处罚、治理、评级与期后进展，不能将12条直接当作全月事件数量。",
+      "B版原生搜索产生6个候选来源，程序成功读取4份HTML，两份公司公告PDF转待核验。首次运行342.141秒后因已知待核验来源被误判未知ID而终止；修复后复用同一模型响应恢复报告，原失败记录保留。程序明确处理了189万元矿方与12.5万元个人罚款，但缺少治理PDF正文。",
+      "B的搜索阶段耗时、用量与摘要阶段分别保存在search-model和model目录。B首次模型结果已经正确将两份未读PDF标pending，失败发生在本地校验层。固定B1也因合法重复排除记录误拒而失败，修复并复用原响应恢复，固定B2首次运行完整成功。",
+      "联网两版搜索路径不同：A可自主多轮补搜，B采用登记查询并执行程序采集。此轮用于发现实际覆盖和工程问题，不能把覆盖、耗时差异全部归因于有无脚本。最初Bing RSS虽返回200但命中明显无关，已保留渠道试跑记录，正式脚本搜索改用Codex原生工具。"
+    ],
+    "interpretation": [
+      "准确性方面，四次输出在8项预设核对中均得8分。只代表这些已核验事实，报告中其他细节和建议质量还需要更广泛评价。两版都区分处罚金额对象、交易审批阶段和政策日期，也都披露评级及整改证据缺口。",
+      "输入用量方面，A每次37632 tokens，B每次36994 tokens，减少638 tokens，约1.70%。本材料中重复正文较短，占比有限，未观察到大幅用量下降。输出长度也有差异，不能将篇幅直接作为质量指标。",
+      "可复现性方面，四次原始材料摘要值一致，B两次均保留6份独立正文及1条重复审计记录；固定材料任务的工具事件未出现业务工具调用。A两次也识别了重复项，故本次材料无法证明程序去重优于模型判断。",
+      "工程稳定性方面，B首次联网和固定运行均暴露了来源角色校验不完整的问题。补充未读/重复来源回归后，B2首次完整运行成功。模型事实正确仍可能被本地程序误拒，完成率和恢复成本应与内容质量共同评价。",
+      "效率方面，A两次平均197.34秒，B首次运行口径平均179.74秒，但B1未计代码修复与恢复时间，CLI还存在连接回退延迟，不能据此宣称可靠提速或费用节省。CLI未提供可核验费用数据。",
+      "适用条件方面，重复链接合并、日期初筛、金额计算、状态与引用校验适合明确算法；主体归属、证据冲突、政策适用和建议仍需模型或研究者判断。程序总结仍调用生成模型，B版的全部输出具有非确定性部分。",
+      "本次B准备的重复记录只保留ID和合并理由，模型因此无法直接看到对应主记录映射；原始材料仍完整留档。后续扩大应用时可增强去重映射和PDF/动态正文阅读，但本次结果只按实际实现评价。"
+    ]
+  },
+  "cost": null,
+  "note": "CLI用量为其实际报告值；费用未取得，人工评价为本研究者复核。"
+}

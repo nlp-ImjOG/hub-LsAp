@@ -1,0 +1,63 @@
+{
+  "created_before_output_review": true,
+  "source": "固定材料原网页正文；原文保存在fixed-materials/benchmark-corpus.json",
+  "checks": [
+    {
+      "id": "C01",
+      "topic": "上湾煤矿金额",
+      "expected": "企业合并罚款9万元，决定2026-10-14，公示2026-10-19",
+      "source": "P01",
+      "weight": 1
+    },
+    {
+      "id": "C02",
+      "topic": "金烽寸草塔金额和对象",
+      "expected": "企业180万元，负责人12.5万元分别表述",
+      "source": "P02",
+      "weight": 1
+    },
+    {
+      "id": "C03",
+      "topic": "停产与后续状态",
+      "expected": "责令停产整顿3天、暂扣安全生产许可证；整改和恢复状态不能由处罚事实推定",
+      "source": "P02",
+      "weight": 1
+    },
+    {
+      "id": "C04",
+      "topic": "股权交易阶段",
+      "expected": "董事会批准50%股权收购，约6.18亿元；不把批准直接表述为已完成交割",
+      "source": "P03",
+      "weight": 1
+    },
+    {
+      "id": "C05",
+      "topic": "条例日期",
+      "expected": "2024年公布、2026年8月修订、2026年10月网页发布须区分",
+      "source": "P05",
+      "weight": 1
+    },
+    {
+      "id": "C06",
+      "topic": "同业主体与时点",
+      "expected": "中国中煤/上海能源实践归属清楚；活动10月21日、官网10月22日发布",
+      "source": "P06",
+      "weight": 1
+    },
+    {
+      "id": "C07",
+      "topic": "评级缺口",
+      "expected": "材料缺少10月评级机构原始记录，说明缺口",
+      "source": "corpus_scope",
+      "weight": 1
+    },
+    {
+      "id": "C08",
+      "topic": "重复材料",
+      "expected": "P07与P01同正文，合并/排除或明确重复，不重复计为独立事件",
+      "source": "P01/P07",
+      "weight": 1
+    }
+  ],
+  "grading": "逐项人工核对输出与原文，满足记1，部分满足0.5，错误或缺失0；这是研究者复核，未做独立盲评。引用合法性另程序核对。"
+}

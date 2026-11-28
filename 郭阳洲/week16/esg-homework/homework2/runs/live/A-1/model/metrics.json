@@ -1,0 +1,43 @@
+{
+  "backend": "codex-cli",
+  "web_search": true,
+  "success": true,
+  "model": "CLI/server default; not exposed by this adapter",
+  "usage": {
+    "input_tokens": 286432,
+    "cached_input_tokens": 238464,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 6285,
+    "reasoning_output_tokens": 0
+  },
+  "exit_code": 0,
+  "tool_types": [
+    "error",
+    "agent_message",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "mcp_tool_call",
+    "agent_message"
+  ],
+  "elapsed_seconds": 308.735
+}

@@ -1,0 +1,9 @@
+{
+  "mode": "fixed",
+  "variant": "B",
+  "run": "1",
+  "completed": false,
+  "input_sha256": "64e373715471875da6f654374e521e7682f96d9a11d5baf2727d25750654de21",
+  "error": "ValueError: Unknown or duplicate source_id: P07",
+  "elapsed_seconds": 178.375
+}

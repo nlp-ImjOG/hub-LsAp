@@ -1,0 +1,14 @@
+{
+  "captured_at": "2026-11-26",
+  "files": {
+    "esg-monthly-report/SKILL.md": "0e99745fdcbcbb7fcaaf817ca499b3ba2bfcc930d1678064417493d74801e7d0",
+    "esg-tender-intelligence/SKILL.md": "31d49310ab9ce0b3bd2e412fddc0143eb83b056c9c93d64226e4cd8f3907c3cc",
+    "esg-monthly-report/agents/openai.yaml": "eb2d79487e22f7fc7bc719ecaad1b3b2b3a75b512c0fd35d1b22636664c90fe6",
+    "esg-monthly-report/references/research.md": "bc806e84eadeb06bf0a4a5e4df4b3382b13224e092ccecf45bebb26fb9f01d9f",
+    "esg-monthly-report/scripts/render_report.py": "54fcdbcb6df82cff65bd281ae0b1e5c1d09dce59fb33925f2c7e3e502a40b633",
+    "esg-tender-intelligence/agents/openai.yaml": "54968b7b752acb679a1fe19ce2b8b97b1d0823be63a3acf86839bc84937d66fa",
+    "esg-tender-intelligence/references/method.md": "5e2fd76a7d466901776fc9f5a62092dce414b769bac616ce71d4c9b1eb7f1374",
+    "esg-tender-intelligence/scripts/analyze.py": "4e1c76a507091432be4e74a7cd9e4fb1c18ed818aebf165a0799e83bd6165419",
+    "esg-tender-intelligence/scripts/render_report.py": "54fcdbcb6df82cff65bd281ae0b1e5c1d09dce59fb33925f2c7e3e502a40b633"
+  }
+}

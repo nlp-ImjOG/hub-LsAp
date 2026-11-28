@@ -1,0 +1,6 @@
+{
+  "completed": true,
+  "reused_model_response": true,
+  "reason": "已知重复来源P07按outside说明，校验器修正为接受该合法排除记录；重复项保留审计JSON并从报告事实表排除",
+  "original_attempt": "run.json"
+}

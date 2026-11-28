@@ -1,0 +1,126 @@
+{
+  "documents": [
+    {
+      "id": "S01",
+      "title": "关于中国神华能源股份有限公司上湾煤矿行政处罚情况的公示",
+      "url": "https://yjglj.ordos.gov.cn/ywgzx/gdnr/202610/t20261019_2057442.html",
+      "published_at": "2026-10-19",
+      "text": "鄂尔多斯市应急管理局，直接原文，处罚事由、结果和决定日期栏。蒙（鄂）煤监管罚〔2026〕104014号，10月14日决定，三项设备缺失各罚3万元。",
+      "fetch_status": "model_read",
+      "verification": "模型工具读取，见事件日志"
+    },
+    {
+      "id": "S02",
+      "title": "关于中国神华能源股份有限公司金烽寸草塔煤矿行政处罚情况的公示",
+      "url": "https://yjglj.ordos.gov.cn/ywgzx/gdnr/202610/t20261019_2057443.html",
+      "published_at": "2026-10-19",
+      "text": "鄂尔多斯市应急管理局，直接原文，处罚事由、结果和决定日期栏。蒙（鄂）煤监管罚〔2026〕104010-1号及104010-2号。10月15日决定，超定员和人卡分离，停产整顿3天、暂扣许可证，煤矿和负责人分别罚180万元、12.5万元。",
+      "fetch_status": "model_read",
+      "verification": "模型工具读取，见事件日志"
+    },
+    {
+      "id": "S03",
+      "title": "关于中国神华能源股份有限公司寸草塔煤矿行政处罚情况的公示",
+      "url": "https://yjglj.ordos.gov.cn/ywgzx/gdnr/202611/t20261110_2106378.html",
+      "published_at": "2026-11-09",
+      "text": "鄂尔多斯市应急管理局，直接原文，处罚表。蒙（鄂）煤监管罚〔2026〕104021号，11月6日决定，合计罚9万元。",
+      "fetch_status": "model_read",
+      "verification": "模型工具读取，见事件日志"
+    },
+    {
+      "id": "S04",
+      "title": "关于中国神华能源股份有限公司乌兰木伦煤矿行政处罚情况的公示",
+      "url": "https://yjglj.ordos.gov.cn/ywgzx/gdnr/202611/t20261110_2106369.html",
+      "published_at": "2026-11-09",
+      "text": "鄂尔多斯市应急管理局，直接原文，处罚表。蒙（鄂）煤监管罚〔2026〕104019号，11月6日决定，合计罚6万元。",
+      "fetch_status": "model_read",
+      "verification": "模型工具读取，见事件日志"
+    },
+    {
+      "id": "S05",
+      "title": "中国神华关于第六届董事会第二十三次会议决议的公告",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-24/1225620895.PDF",
+      "published_at": "2026-10-24",
+      "text": "中国神华正式附件，经巨潮资讯网读取，官方镜像。临2026-068，第1页及第3至4页议案十一。10月23日开会，受让50%股权，对价61,767.395693万元并以备案评估值为准，两名关联董事回避。",
+      "fetch_status": "model_read",
+      "verification": "模型工具读取，见事件日志"
+    },
+    {
+      "id": "S06",
+      "title": "中国神华关于总会计师、董事会秘书离任的公告",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-10/1225599340.PDF",
+      "published_at": "2026-10-10",
+      "text": "中国神华正式附件，经巨潮资讯网读取，官方镜像。临2026-064，第1页。10月9日收到辞职报告，新任董秘聘任前由张长岩代行职责。",
+      "fetch_status": "model_read",
+      "verification": "模型工具读取，见事件日志"
+    },
+    {
+      "id": "S07",
+      "title": "碳排放权交易管理暂行条例",
+      "url": "https://www.mee.gov.cn/zcwj/gwywj/202610/t20261010_1175967.shtml",
+      "published_at": "2024-01-25",
+      "text": "国务院条例，生态环境部官方镜像，页首及第十一条。2024年1月25日公布，2026年8月8日修订，2026年10月10日转载。重点排放单位须实施数据质量控制并编报年度排放报告。",
+      "fetch_status": "model_read",
+      "verification": "模型工具读取，见事件日志"
+    },
+    {
+      "id": "S08",
+      "title": "中国中煤成功举办第七届“国企开放日”活动",
+      "url": "https://zm68.chinacoal.com/col/col7641/art/2026/art_68b30ecda075167466bb75d3cebd15b8.html",
+      "published_at": "2026-10-22",
+      "text": "中国中煤所属网站发布方活动稿，直接原文，导语及基地介绍。10月21日沛县开放日展示源网荷储，首期光伏2021年底从开工至并网用时42天。",
+      "fetch_status": "model_read",
+      "verification": "模型工具读取，见事件日志"
+    },
+    {
+      "id": "S09",
+      "title": "关于印发全国碳排放权交易市场发电等行业配额总量和分配方案的通知",
+      "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202609/t20260903_1165029.html",
+      "published_at": "",
+      "text": "生态环境部，直接原文，通知正文和落款。2026年9月1日签署，办公厅9月2日印发，页面首发日未独立核实。发电行业覆盖2025、2026年度。",
+      "fetch_status": "model_read",
+      "verification": "模型工具读取，见事件日志"
+    },
+    {
+      "id": "S10",
+      "title": "中国神华关于收购国能新疆煤制气有限公司50%股权暨关联交易进展的公告",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-11-17/1225672989.PDF",
+      "published_at": "2026-11-17",
+      "text": "中国神华正式附件，经巨潮资讯网读取，官方镜像。临2026-072，第1页。新疆能源与西部能源于11月16日签署股权转让协议。",
+      "fetch_status": "model_read",
+      "verification": "模型工具读取，见事件日志"
+    },
+    {
+      "id": "S11",
+      "title": "关于更新发电设施温室气体排放核算与报告、核查指南有关技术要求的通知",
+      "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202606/t20260629_1160473.html",
+      "published_at": "",
+      "text": "生态环境部，直接原文，元数据及正文适用范围。生成日期2026年6月29日，页面首发日未独立核实，技术要求适用于自2026年度起的发电行业核算报告及核查。",
+      "fetch_status": "model_read",
+      "verification": "模型工具读取，见事件日志"
+    },
+    {
+      "id": "S12",
+      "title": "中国神华（601088.SH）Wind ESG评级",
+      "url": "https://esg.wind.com.cn/Wind.ESG.Web/publicCompany/601088.SH.html?lan=cn",
+      "published_at": "",
+      "text": "Wind，直接读取评级方动态页，10月评级变动待核验。直读和同期搜索返回不同的11月综合得分更新日，页面首发日期与10月留档未知。",
+      "fetch_status": "model_read",
+      "verification": "模型工具读取，见事件日志"
+    }
+  ],
+  "pending": [],
+  "duplicates": [],
+  "queries": [
+    "中国神华 2026年10月 安全 处罚 site:ordos.gov.cn",
+    "中国神华 2026年10月 董事会 公告",
+    "2026年10月 碳排放 标准 site:mee.gov.cn",
+    "中国中煤 2026年10月 源网荷储",
+    "2026年10月 碳排放 标准 site:mee.gov.cn",
+    "中国神华 上湾煤矿 金烽寸草塔 2026 104014 整改 验收 复查",
+    "中国神华 2026 10 ESG 评级 601088 1088 中国神华 煤制气 11月17日",
+    "site:chinacoal.com 沛县 上海能源 源网荷储 2026 10 并网 投产",
+    "site:mee.gov.cn 2026年10月 发电 碳排放 核算 核查 标准 甲烷",
+    "中国神华 2026 11 17 煤制气 股权 进展 公告 PDF 1088 中国神华"
+  ]
+}
