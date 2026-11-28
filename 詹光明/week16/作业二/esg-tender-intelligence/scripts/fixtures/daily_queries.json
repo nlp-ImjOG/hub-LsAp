@@ -1,0 +1,10 @@
+[
+  {"query": "ESG 招标 2026年11月", "category": "ESG报告/信息披露", "results": 6, "status": "ok"},
+  {"query": "碳足迹 招标 2026年11月", "category": "碳盘查/碳核算/碳足迹", "results": 4, "status": "ok"},
+  {"query": "零碳园区 招标 2026年11月", "category": "双碳规划/零碳园区/碳预算", "results": 3, "status": "ok"},
+  {"query": "碳管理平台 招标 2026年11月", "category": "碳管理/ESG数字化平台", "results": 3, "status": "ok"},
+  {"query": "ESG 采购 2026年11月", "category": "ESG咨询/管理提升/评级", "results": 5, "status": "ok"},
+  {"query": "可持续发展报告 采购 2026年11月", "category": "ESG报告/信息披露", "results": 2, "status": "ok"},
+  {"query": "site:ccgp.gov.cn ESG 招标", "category": "ESG报告/信息披露", "results": 4, "status": "ok"},
+  {"query": "site:bidding.csg.cn 碳 招标", "category": "碳盘查/碳核算/碳足迹", "results": 2, "status": "ok"}
+]
